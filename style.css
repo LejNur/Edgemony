@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #151515;
+  overflow: hidden;
+}
+
+.container {
+  width: 40%;
+  height: fit-content;
+  margin:10% auto;
+  padding: 8px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 200;
+  color: #FFDB00;
+  letter-spacing: 2px;
+}
+
+.start-btn, .stop-btn {
+  background-color: transparent;
+  border: 1px solid #FFDB00;
+  padding: 15px;
+  margin:0 10px;
+  color: #FFDB00;
+  font-size: 20px;
+  transition: all ease-in-out 300ms;
+}
+
+.stop-btn:hover {
+  background-color: #FF0000;
+  border:1px solid #FF0000 ;
+  color:white;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #367E18;
+  border: 1px solid #367E18;
+  color: white;
+  cursor: pointer;
+}
