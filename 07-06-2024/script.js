@@ -1,60 +1,82 @@
+
 import { API_KEY } from "./keys.js";
 
-const containerEl = document.querySelector('.container');
-const searchBar = document.querySelector('.search-bar');
+const containerEl = document.querySelector(".container");
+const searchBar = document.querySelector(".search-bar");
+const buttonsEl = document.querySelectorAll(".page-btn");
 
+let page = 1;
+let results = [];
 
-  fetch("https://api.themoviedb.org/3/movie/popular", {
+// Fetch Movies
+const fetchMovies = (page) => {
+  fetch(`https://api.themoviedb.org/3/movie/popular?page=${page}`, {
     headers: {
       Authorization: `Bearer ${API_KEY}`,
     },
   })
     .then((res) => res.json())
-
     .then((response) => {
-      console.log(response);
-      const results = response.results;
+      results = response.results;
       renderList(results, containerEl);
-      console.log(results);
-
-      searchBar.addEventListener("input", (event) => {
-        const inputValue = event.target.value;
-        filterMovies(inputValue, results);
-      });
     })
-    .catch((err) => console.error(err));
+    .catch((err) => console.error('Error:', err));
+};
 
-    
-//Making Card List
-  function renderList (res, container) {
+//Seeing all the cards on page load
+window.onload = () => {
+  fetchMovies(page);
 
-    res.forEach((element) => {
-      const card = document.createElement("div");
-      const cardImg = document.createElement("img");
-      const cardTitle = document.createElement("h2");
-      const cardOverview = document.createElement("p");
+//Search bar filter
+  searchBar.addEventListener("input", (event) => {
+    const inputValue = event.target.value.toLowerCase();
+    filterMovies(inputValue, results);
+  });
 
-      card.className = "card";
-      cardImg.className = 'card-img';
-      cardImg.src = ` https://image.tmdb.org/t/p/w1280${element.poster_path}`;
-      cardTitle.textContent = element.title;
-      cardOverview.textContent = element.overview;
-
-      container.append(card);
-      card.appendChild(cardImg);
-      card.appendChild(cardTitle);
-      card.appendChild(cardOverview);
+//Pagination Buttons
+  buttonsEl.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.classList.contains("btn-left")) {
+        if (page <= 1) return;
+        page--;
+      } else {
+        page++;
+      }
+      fetchMovies(page);
     });
-  }
+  });
+};
 
+//Rendering Movie Card List
+function renderList(movies, container) {
+  container.innerHTML = "";
+  movies.forEach((element) => {
+    const card = document.createElement("div");
+    const cardImg = document.createElement("img");
+    const cardTitle = document.createElement("h2");
+    const cardOverview = document.createElement("p");
 
-//Filtering movies with input
-function filterMovies (title, movies) {
-  const filterResult = movies.filter((movie) => {
-    return movie.title.toLowerCase().includes(title);
-  })
+    card.className = "card";
+    cardImg.className = "card-img";
+    cardImg.src = `https://image.tmdb.org/t/p/w1280${element.poster_path}`;
+    cardTitle.textContent = element.title;
+    cardOverview.textContent = element.overview;
 
-  containerEl.innerHTML = '';
-  renderList(filterResult, containerEl);
+    container.append(card);
+    card.appendChild(cardImg);
+    card.appendChild(cardTitle);
+    card.appendChild(cardOverview);
+  });
 }
+
+//Filter movies
+function filterMovies(title, movies) {
+  const filteredResults = movies.filter((movie) =>
+    movie.title.toLowerCase().includes(title)
+  );
+  renderList(filteredResults, containerEl);
+}
+
+
+
 
