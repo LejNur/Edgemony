@@ -4,13 +4,15 @@ import { API_KEY } from "./keys.js";
 const containerEl = document.querySelector(".container");
 const searchBar = document.querySelector(".search-bar");
 const buttonsEl = document.querySelectorAll(".page-btn");
+const rateBtn = document.querySelector(".rate-btn");
+let BASE_URL = 'https://api.themoviedb.org/3/movie/popular';
 
 let page = 1;
 let results = [];
 
 // Fetch Movies
 const fetchMovies = (page) => {
-  fetch(`https://api.themoviedb.org/3/movie/popular?page=${page}`, {
+  fetch(`${BASE_URL}?page=${page}`, {
     headers: {
       Authorization: `Bearer ${API_KEY}`,
     },
@@ -20,7 +22,7 @@ const fetchMovies = (page) => {
       results = response.results;
       renderList(results, containerEl);
     })
-    .catch((err) => console.error('Error:', err));
+    .catch((err) => console.error("Error:", err));
 };
 
 //Seeing all the cards on page load
@@ -77,6 +79,7 @@ function filterMovies(title, movies) {
   renderList(filteredResults, containerEl);
 }
 
-
-
-
+rateBtn.addEventListener('click', () => {
+  BASE_URL = "https://api.themoviedb.org/3/movie/top_rated";
+  fetchMovies(page);
+})
