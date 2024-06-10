@@ -135,3 +135,13 @@ body {
   
 }
 
+#genre{
+  background-color: #030637;
+  color: #910A67;
+  border:none;
+  
+  padding:20px;
+  font-size: 18px;
+  margin: 1rem;
+}
+

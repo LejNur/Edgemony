@@ -7,6 +7,7 @@ const searchBar = document.querySelector(".search-bar");
 const buttonsEl = document.querySelectorAll(".page-btn");
 const category = document.querySelector('.category-container');
 const type = document.querySelector('.type-container');
+const genre = document.getElementById('genre');
 
 
 let page = 1;
@@ -14,19 +15,23 @@ let results = [];
 let currentType = 'movie';
 let currentEndpoint = 'popular';
 
-//Seeing all the cards on page load
-// window.onload = () => {
-//   GET('popular', page) }
+
 
 const render = async () => {
   const endpoint = `${currentType}/${currentEndpoint}`;
-  const movieResponse = await GET(endpoint, page);
-  results = movieResponse.results;
+  const response = await GET(endpoint, page);
+  results = response.results;
   renderList(results, containerEl);
   
 };
 
 render();
+
+genre.addEventListener('change', (event) => {
+   const genreID = Number(event.target.value);
+  let filterGenre = results.filter((obj) => obj.genre_ids.includes(genreID));
+  renderList(filterGenre, containerEl);
+})
 
 
 //Search bar filter
