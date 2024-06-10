@@ -6,44 +6,65 @@ const containerEl = document.querySelector(".container");
 const searchBar = document.querySelector(".search-bar");
 const buttonsEl = document.querySelectorAll(".page-btn");
 const category = document.querySelector('.category-container');
+const type = document.querySelector('.type-container');
+
 
 let page = 1;
 let results = [];
+let currentType = 'movie';
+let currentEndpoint = 'popular';
 
 //Seeing all the cards on page load
 // window.onload = () => {
 //   GET('popular', page) }
 
-const render = async (endpoint) => {
+const render = async () => {
+  const endpoint = `${currentType}/${currentEndpoint}`;
   const movieResponse = await GET(endpoint, page);
   results = movieResponse.results;
   renderList(results, containerEl);
   
 };
 
-render('popular');
+render();
+
 
 //Search bar filter
   searchBar.addEventListener("input", (event) => {
     const inputValue = event.target.value.toLowerCase();
-    filterMovies(inputValue, results);
+    filter(inputValue, results);
   });
 
   //Filter movies
-function filterMovies(title, movies) {
-  const filteredResults = movies.filter((movie) =>
+function filter(title, movies) {
+  const filterResults = movies.filter((movie) =>
     movie.title.toLowerCase().includes(title)
   );
-  renderList(filteredResults, containerEl);
+  renderList(filterResults, containerEl);
 }
 
+//Category Filter
 category.addEventListener('click', (e) => {
-  
+  const categoryID = e.target.id;
   if(e.target.tagName === 'BUTTON'){
-    const categoryID = e.target.id;
-    render(categoryID, page);
+    currentEndpoint = categoryID;
+    page = 1;
+    render();
+  }
+});
+
+
+//Type Filter
+type.addEventListener('click', (e) => {
+  const typeID = e.target.id;
+  if(e.target.tagName === 'BUTTON'){
+    currentType = typeID;
+    currentEndpoint = "popular";
+    page = 1;
+    render();
   }
 })
+
 
 //Pagination Buttons
   buttonsEl.forEach((button) => {
@@ -54,7 +75,7 @@ category.addEventListener('click', (e) => {
       } else {
         page++;
       }
-      fetchMovies('', page);
+      render();
     });
   });
 

@@ -11,7 +11,7 @@ export function renderList(movie, container) {
     card.className = "card";
     cardImg.className = "card-img";
     cardImg.src = `https://image.tmdb.org/t/p/w1280${element.poster_path}`;
-    cardTitle.textContent = element.title;
+    cardTitle.textContent = element.title ?? element.name;
     cardOverview.textContent = element.overview;
 
     container.append(card);

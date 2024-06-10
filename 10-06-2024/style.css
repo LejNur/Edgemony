@@ -78,7 +78,7 @@ body {
 }
 
 .page-btn,
-.rate-btn {
+.category-btn {
   background-color: transparent;
   border: 2px solid #910A67;
   border-radius: 10px;
@@ -87,12 +87,12 @@ body {
   transition: all ease-in-out 300ms;
 }
 
-.rate-btn {
+.category-btn {
   margin: 2rem;
 }
 
 .page-btn:hover,
-.rate-btn:hover {
+.category-btn:hover {
   background-color: #910A67;
   color: #030637;
   cursor: pointer;
