@@ -22,7 +22,6 @@ body {
   background-color: rgb(114, 4, 85, 2.5);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   border-radius: 15px;
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
   overflow: hidden;
@@ -75,6 +74,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-block: 3rem;
+}
+
+.category-container {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-btn,
@@ -91,6 +98,10 @@ body {
   margin: 2rem;
 }
 
+.page-btn {
+  padding: 15px 30px;
+}
+
 .page-btn:hover,
 .category-btn:hover {
   background-color: #910A67;
@@ -98,3 +109,29 @@ body {
   cursor: pointer;
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
+
+.type-btn {
+  border: none;
+  background-color: transparent;
+  color: #910A67;
+  font-size: 34px;
+  transition: all ease 300ms;
+}
+
+.type-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+  overflow: hidden;
+  gap: 3rem;
+}
+
+.type-btn:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+  
+}
+
