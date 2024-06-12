@@ -8,11 +8,7 @@ const buttonEl = document.querySelector(".button-send");
 
 const dialogEl = document.querySelector('dialog');
 const closeDialogBtnEl = document.querySelector('.close-dialog');
-const showModal = document.querySelector(".show-modal");
 
-showModal.addEventListener('click',() => {
-  
-})
 
 closeDialogBtnEl.addEventListener('click', ()=> {
   dialogEl.close();
@@ -89,6 +85,7 @@ deleteBtnEl.addEventListener('click', async () =>{
   const result = await DELETE(id);
   if(result) {
     dialogEl.showModal();
+    setTimeout(() => {dialogEl.close()}, 3000)
   } 
 })
 
