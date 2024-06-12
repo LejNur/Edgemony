@@ -5,47 +5,19 @@ const inputCategoryEl = document.querySelector(".category-id");
 const inputImagesEl = document.querySelector(".images");
 const buttonEl = document.querySelector(".button-send");
 
+const inputID = document.querySelector('.product-id');
+const deleteBtnEl = document.querySelector('.button-delete');
 
 const BASE_URL = "https://api.escuelajs.co/";
 const endpointProducts = "api/v1/products";
 
-
-buttonEl.addEventListener("click", (e) => {
-  inputTitleEl.value;
-  e.preventDefault();
-  const newProduct = {
-    title: inputTitleEl.value,
-    price: inputPriceEl.value,
-    description: inputDescriptionEl.value,
-    categoryId: inputCategoryEl.value,
-    images: [inputImagesEl.value],
-  };
-
-  
- POST(newProduct)
-});
-
-
-
 // GET METHOD
 const GET = async () => {
-  const res = await fetch(`${BASE_URL}${endpointProducts}?limit=1&offset=38`);
+  const res = await fetch(`${BASE_URL}${endpointProducts}?limit=10&offset=0`);
 
   const data = res.json();
   return data;
 };
-
-console.log(await GET());
-// console.log(await GET());
-
-//New Product
-// const objTest = {
-//   title: "New Product",
-//   price: 10,
-//   description: "A description",
-//   categoryId: 1,
-//   images: ["https://placeimg.com/640/480/any"],
-// };
 
 //POST METHOD
 const POST = async (product) => {
@@ -63,8 +35,22 @@ const POST = async (product) => {
   return data.id;
 };
 
-//DELETE METHOD
+//Adding new product-Form/POST
+buttonEl.addEventListener("click", (e) => {
+  e.preventDefault();
+  const newProduct = {
+    title: inputTitleEl.value,
+    price: inputPriceEl.value,
+    description: inputDescriptionEl.value,
+    categoryId: inputCategoryEl.value,
+    images: [inputImagesEl.value],
+  };
 
+  
+ POST(newProduct)
+});
+
+//DELETE METHOD
 const DELETE = async (id) => {
   const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
     method: 'DELETE'
@@ -75,5 +61,17 @@ const DELETE = async (id) => {
   
 }
 
+ //Delete product on button click
+deleteBtnEl.addEventListener('click', () =>{
+  let id = inputID.value;
+  DELETE(id);
 
-// DELETE(38);
+})
+
+
+
+
+
+
+
+
