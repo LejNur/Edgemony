@@ -5,6 +5,19 @@ const inputCategoryEl = document.querySelector(".category-id");
 const inputImagesEl = document.querySelector(".images");
 const buttonEl = document.querySelector(".button-send");
 
+
+const dialogEl = document.querySelector('dialog');
+const closeDialogBtnEl = document.querySelector('.close-dialog');
+const showModal = document.querySelector(".show-modal");
+
+showModal.addEventListener('click',() => {
+  
+})
+
+closeDialogBtnEl.addEventListener('click', ()=> {
+  dialogEl.close();
+})
+
 const inputID = document.querySelector('.product-id');
 const deleteBtnEl = document.querySelector('.button-delete');
 
@@ -52,20 +65,31 @@ buttonEl.addEventListener("click", (e) => {
 
 //DELETE METHOD
 const DELETE = async (id) => {
-  const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
-    method: 'DELETE'
-  })
+  try {
+    const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
+      method: 'DELETE',
+    })
+      if (!res.ok) {
+        throw new Error('Product not found')
+      }
+    const data = await res.json()
+    console.log(data);
+    return data;
 
-  const data = await res.json()
-  console.log(data);
+  }catch (error) {
+  console.log('This is an error message', error);
+  return null;
+  }
   
 }
 
  //Delete product on button click
-deleteBtnEl.addEventListener('click', () =>{
+deleteBtnEl.addEventListener('click', async () =>{
   let id = inputID.value;
-  DELETE(id);
-
+  const result = await DELETE(id);
+  if(result) {
+    dialogEl.showModal();
+  } 
 })
 
 

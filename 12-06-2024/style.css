@@ -2,6 +2,7 @@ body{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .form {
@@ -22,7 +23,7 @@ body{
   border-radius: 8px;
 }
 
-.form button {
+.form button, .container-delete button {
   padding: 8px 28px;
   border: 0.5px solid grey;
   border-radius: 8px;
@@ -31,8 +32,93 @@ body{
   transition: all ease 300ms;
 }
 
-.form button:hover {
+.form button:hover, .container-delete button:hover {
   background-color: grey;
   color: white;
   cursor:pointer;
+}
+
+h2 {
+  margin:0;
+  text-align: center;
+}
+
+
+.container-delete {
+  width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem
+}
+
+.container-delete input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 0.5px solid grey;
+}
+
+
+/* Dialog */
+dialog {
+  border: none;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  display: none;
+  color: darkred;
+  opacity:0;
+  translate: 0 25vh;
+  transition-property: overlay display opacity;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+
+}
+
+dialog[open] {
+  display: flex;
+  justify-content: space-between;
+  opacity:1;
+  translate: 0 0;
+
+  @starting-style {
+    opacity:0;
+    translate: 0 -25vh;
+  }
+}
+
+dialog::backdrop {
+  transition-property: opacity display overlay;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+  opacity:0;
+  background-color: grey;
+}
+
+    dialog[open]::backdrop {
+      opacity: .75;
+    }
+
+/* can not use nesting on pseudo elements */
+@starting-style {
+
+  dialog[open]::backdrop {
+      opacity: 0;
+    }
+}
+
+dialog button {
+  width:20px;
+  height:20px;
+  aspect-ratio: 1;
+ border:none;
+ background-color: transparent;
+ transition: transform ease 500ms;
+
+}
+
+dialog button:hover {
+  cursor:pointer;
+  transform: scale(1.4);
 }
