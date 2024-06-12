@@ -5,7 +5,7 @@ const inputCategoryEl = document.querySelector(".category-id");
 const inputImagesEl = document.querySelector(".images");
 const buttonEl = document.querySelector(".button-send");
 
-
+const containerEl = document.querySelector('.container')
 const dialogEl = document.querySelector('dialog');
 const closeDialogBtnEl = document.querySelector('.close-dialog');
 
@@ -22,11 +22,14 @@ const endpointProducts = "api/v1/products";
 
 // GET METHOD
 const GET = async () => {
-  const res = await fetch(`${BASE_URL}${endpointProducts}?limit=10&offset=0`);
+  const res = await fetch(`${BASE_URL}${endpointProducts}?limit=20&offset=0`);
 
   const data = res.json();
   return data;
+
 };
+
+// console.log(await GET());
 
 //POST METHOD
 const POST = async (product) => {
@@ -94,5 +97,36 @@ deleteBtnEl.addEventListener('click', async () =>{
 
 
 
+//NOT WORKING
+//Rendering Movie Card List
+// function renderList(movies, container) {
+//   container.innerHTML = "";
+//   movies.forEach((element) => {
+//     const card = document.createElement("div");
+//     const cardImg = document.createElement("img");
+//     const cardTitle = document.createElement("h2");
+//     const cardDescription = document.createElement("p");
 
+//     card.className = "card";
+//     cardImg.className = "card-img";
+//     cardImg.src = element.images[1];
+//     cardTitle.textContent = element.title;
+//     cardDescription.textContent = element.overview;
 
+//     container.append(card);
+//     card.appendChild(cardImg);
+//     card.appendChild(cardTitle);
+//     card.appendChild(cardDescription);
+
+    
+//   });
+
+  
+// }
+
+// const render = async () => {
+//   const response = await GET();
+//   renderList(response, containerEl);
+// };
+
+// render();
