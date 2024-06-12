@@ -28,13 +28,14 @@ buttonEl.addEventListener("click", (e) => {
 
 
 // GET METHOD
-// const GET = async () => {
-//   const res = await fetch(`${BASE_URL}${endpointProducts}?limit=8&offset=0`);
+const GET = async () => {
+  const res = await fetch(`${BASE_URL}${endpointProducts}?limit=1&offset=38`);
 
-//   const data = res.json();
-//   return data;
-// };
+  const data = res.json();
+  return data;
+};
 
+console.log(await GET());
 // console.log(await GET());
 
 //New Product
@@ -62,4 +63,17 @@ const POST = async (product) => {
   return data.id;
 };
 
+//DELETE METHOD
 
+const DELETE = async (id) => {
+  const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
+    method: 'DELETE'
+  })
+
+  const data = await res.json()
+  console.log(data);
+  
+}
+
+
+// DELETE(38);
