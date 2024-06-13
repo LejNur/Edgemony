@@ -29,7 +29,7 @@ const GET = async () => {
 
 };
 
-// console.log(await GET());
+console.log(await GET());
 
 //POST METHOD
 const POST = async (product) => {
@@ -58,8 +58,10 @@ buttonEl.addEventListener("click", (e) => {
     images: [inputImagesEl.value],
   };
 
-  
+
  POST(newProduct)
+
+
 });
 
 //DELETE METHOD
@@ -98,35 +100,35 @@ deleteBtnEl.addEventListener('click', async () =>{
 
 
 //NOT WORKING
-//Rendering Movie Card List
-// function renderList(movies, container) {
-//   container.innerHTML = "";
-//   movies.forEach((element) => {
-//     const card = document.createElement("div");
-//     const cardImg = document.createElement("img");
-//     const cardTitle = document.createElement("h2");
-//     const cardDescription = document.createElement("p");
 
-//     card.className = "card";
-//     cardImg.className = "card-img";
-//     cardImg.src = element.images[1];
-//     cardTitle.textContent = element.title;
-//     cardDescription.textContent = element.overview;
+function renderList(products, container) {
+  container.innerHTML = "";
+  products.forEach((product) => {
+    const card = document.createElement("div");
+    const cardImg = document.createElement("img");
+    const cardTitle = document.createElement("h2");
+    const cardDescription = document.createElement("p");
 
-//     container.append(card);
-//     card.appendChild(cardImg);
-//     card.appendChild(cardTitle);
-//     card.appendChild(cardDescription);
+    card.className = "card";
+    cardImg.className = "card-img";
+    // cardImg.src = product.category.image;
+    cardTitle.textContent = product.title;
+    cardDescription.textContent = product.description;
+
+    container.append(card);
+    card.appendChild(cardImg);
+    card.appendChild(cardTitle);
+    card.appendChild(cardDescription);
 
     
-//   });
+  });
 
   
-// }
+}
 
-// const render = async () => {
-//   const response = await GET();
-//   renderList(response, containerEl);
-// };
+const render = async () => {
+  const response = await GET();
+  renderList(response, containerEl);
+};
 
-// render();
+render();
