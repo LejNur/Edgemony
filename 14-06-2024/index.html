@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container"></div>
+  <form class="form" onsubmit="return false">
+    <input class="title" type="text" placeholder="Title" required>
+    <p class="title-error"></p>
+    <input class="price" type="number" placeholder="Price" required>
+    <p class="price-error"></p>
+    <input class="description" type="text" placeholder="Description" required>
+    <p class="description-error"></p>
+    <input class="category-id" type="number" placeholder="Category ID" required>
+    <p class="category-error"></p>
+    <input class="images" type="text" placeholder="Image Url" required>
+    <p class="images-error"></p>
+    <button class="button-send">Send</button>
+
+  </form>
+
+  <h2>Please insert the ID of a product you want to delete</h2>
+  <div class="container-delete">
+    <input class="product-id" type="number" placeholder="Insert ID">
+    <button class="button-delete">Delete</button>
+  </div>
+
+  <h2>Choose the ID of the product you want to modify, and the form above will be filled automatically.</h2>
+  <div class="search-container">
+    <input type="number" class="search-id" placeholder="ID of a product to modify">
+    <button class="search-button">Search</button>
+    <button class="modify-button">Modify</button>
+  </div>
+
+
+  <dialog>
+    <h3>Product Deleted!</h3>
+    <button class="close-dialog">X</button>
+  </dialog>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

@@ -8,35 +8,32 @@ const errorHandler = (err) => {
 
 
   err.message.forEach((message) => {
-    if (message.includes("title")) {
+    switch(true) {
+      case message.includes('title'):  
       titleErrorMessage.textContent = message;
-      return;
-    }
+      break;
 
-    if (message.includes("price")) {
+      case message.includes('price'):
       priceErrorMessage.textContent = message;
-      return;
-    }
+      break;
 
-    if (message.includes("category")) {
+      case message.includes('category'):
       categoryErrorMessage.textContent = message;
-      return;
-    }
+      break;
 
-    if (message.includes("description")) {
+      case message.includes('description'):
       descriptionErrorMessage.textContent = message;
-      return;
-    }
+      break;
 
-    if (message.includes("images")) {
+      case message.includes('images'):
       imagesErrorMessage.textContent = message;
-      return;
+      break;
+
+      default: 
+      console.log('Error');
     }
   });
-
-
-
-
+  
   console.error(`${err.statusCode} - ${err.error}`);
 };
 

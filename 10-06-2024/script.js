@@ -7,19 +7,20 @@ const searchBar = document.querySelector(".search-bar");
 const buttonsEl = document.querySelectorAll(".page-btn");
 const category = document.querySelector('.category-container');
 const type = document.querySelector('.type-container');
-const genre = document.getElementById('genre');
+
 
 
 let page = 1;
 let results = [];
 let currentType = 'movie';
 let currentEndpoint = 'popular';
+let query = ''
 
 
 
 const render = async () => {
   const endpoint = `${currentType}/${currentEndpoint}`;
-  const response = await GET(endpoint, page);
+  const response = await GET(endpoint, page, query);
   results = response.results;
   renderList(results, containerEl);
   
@@ -27,25 +28,18 @@ const render = async () => {
 
 render();
 
-genre.addEventListener('change', (event) => {
-   const genreID = Number(event.target.value);
-  let filterGenre = results.filter((obj) => obj.genre_ids.includes(genreID));
-  renderList(filterGenre, containerEl);
-})
-
-
 //Search bar filter
-  searchBar.addEventListener("input", (event) => {
-    const inputValue = event.target.value.toLowerCase();
-    filter(inputValue, results);
-  });
+searchBar.addEventListener("input", (event) => {
+  const inputValue = event.target.value.toLowerCase();
+  filter(inputValue, results);
+});
 
-  //Filter movies
+//Filter movies
 function filter(title, movies) {
   const filterResults = movies.filter((movie) =>
     movie.title.toLowerCase().includes(title)
-  );
-  renderList(filterResults, containerEl);
+);
+renderList(filterResults, containerEl);
 }
 
 //Category Filter
@@ -72,10 +66,10 @@ type.addEventListener('click', (e) => {
 
 
 //Pagination Buttons
-  buttonsEl.forEach((button) => {
-    button.addEventListener("click", () => {
-      if (button.classList.contains("btn-left")) {
-        if (page <= 1) return;
+buttonsEl.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("btn-left")) {
+      if (page <= 1) return;
         page--;
       } else {
         page++;
@@ -83,8 +77,49 @@ type.addEventListener('click', (e) => {
       render();
     });
   });
+  
+  
+//Genres Filter
+  const selectGenre = document.getElementById("genre");
+  console.log(selectGenre);
+
+  
+  const renderGenreList = async () => {
+    
+    const genreListResponse = await GET('genre/movie/list');
+    console.log(genreListResponse.genres);
+    
+    genreListResponse.genres.forEach((genre) => {
+    const optionEl = document.createElement("option");
+    optionEl.value = genre.id
+    optionEl.textContent = genre.name;
+    
+    selectGenre.appendChild(optionEl);
+  })
+
+  
+}
+
+renderGenreList();
+
+selectGenre.addEventListener("change", (e) => {
+  const id = Number(e.target.value);
+  page = 1;
+  console.log("clicked id:", id);
+  query = `with_genres=${id}`;
+  currentType = `discover/${currentType}`;
+  currentEndpoint='';
+  render();
+  
+  
+});
 
 
+  
 
-
-
+  //First solution for exercise genres filter
+  // genre.addEventListener('change', (event) => {
+  //    const genreID = Number(event.target.value);
+  //   let filterGenre = results.filter((obj) => obj.genre_ids.includes(genreID));
+  //   renderList(filterGenre, containerEl);
+  // })

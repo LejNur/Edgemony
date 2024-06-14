@@ -30,15 +30,29 @@ const GET = async () => {
   return data;
 };
 
+
 const getById = async (id) => {
-  const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
-    method: "GET",
-  });
+  try {
+    const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
+      method: "GET",
+    });
 
-  const data = await res.json();
+    if(!res.ok) {
+      throw new Error ('Product not found')
+    }
+  
+    const data = await res.json();
+  
+    return data;
+  } catch(error) {
+    dialogEl.textContent = error.message;
+    dialogEl.showModal();
+    setTimeout(() => {
+      dialogEl.close()
+    }, 3000 )
+  }
 
-  return data;
-};
+  }
 
 // console.log(await getById(901));
 
@@ -70,7 +84,6 @@ const POST = async (product) => {
 //Adding new product-Form/POST
 buttonEl.addEventListener("click", async (e) => {
   e.preventDefault();
-
   const newProduct = {
     title: inputTitleEl.value,
     price: inputPriceEl.value,
@@ -163,18 +176,19 @@ const PUT = async (id, product) => {
   return data;
 };
 
-
+// const editProduct = async (id, product) => {
+//   console.log(await PUT(id, product));
+// };
 let id = 0;
-searchButtonEl.addEventListener("click", async () => {
-
+searchButtonEl.addEventListener("click", async (event) => {
     id = Number(inputId.value);
     let findProduct = await getById(id);
+    console.log(findProduct);
     inputTitleEl.value = findProduct.title;
     inputPriceEl.value = findProduct.price;
     inputDescriptionEl.value = findProduct.description;
     inputCategoryEl.value = findProduct.category.id;
     inputImagesEl.value = findProduct.images;
-    
   }
 
 );
@@ -182,9 +196,6 @@ searchButtonEl.addEventListener("click", async () => {
 
 
   modifyButtonEl.addEventListener("click", async () => {
-   
-      console.log('write something');
-   
     const updateProduct = {
       title: inputTitleEl.value,
       price: inputPriceEl.value,
@@ -195,18 +206,6 @@ searchButtonEl.addEventListener("click", async () => {
 
     PUT(id, updateProduct);
     console.log(id, updateProduct);
-     console.log(await PUT(id, updateProduct));
+    //  console.log(await PUT(id, updateProduct));
   });
 
-
-
-
-// const staticProduct = {
-//   title: "Hello",
-//   price: 28,
-//   description: "hello there",
-//   categoryId: 8,
-//   images: ["https://asd.asd"],
-// };
-
-// console.log(await editProduct(883, staticProduct));
