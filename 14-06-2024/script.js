@@ -1,4 +1,5 @@
 import errorHandler from "./errorHandler.js";
+
 const formEl = document.querySelector('.form');
 const inputTitleEl = document.querySelector(".title");
 const inputPriceEl = document.querySelector(".price");
@@ -45,6 +46,7 @@ const getById = async (id) => {
   
     return data;
   } catch(error) {
+    
     dialogEl.textContent = error.message;
     dialogEl.showModal();
     setTimeout(() => {
@@ -54,7 +56,7 @@ const getById = async (id) => {
 
   }
 
-// console.log(await getById(901));
+
 
 //POST METHOD
 const POST = async (product) => {
@@ -68,11 +70,12 @@ const POST = async (product) => {
     });
     const data = await res.json();
     
+    
     if (data.error) {
       throw data
       }
 
-// console.log(data.id);
+
     return data.id;
   } catch (error) {
     errorHandler(error);
@@ -92,7 +95,8 @@ buttonEl.addEventListener("click", async (e) => {
     images: [inputImagesEl.value],
   };
 
-  POST(newProduct);
+  await POST(newProduct);
+
   console.log(await POST(newProduct));
   formEl.reset();
 });
@@ -133,68 +137,74 @@ closeDialogBtnEl.addEventListener("click", () => {
 
 
 
-function renderList(products, container) {
-  container.innerHTML = "";
-  products.forEach((product) => {
-    const card = document.createElement("div");
-    const cardImg = document.createElement("img");
-    const cardTitle = document.createElement("h2");
-    const cardDescription = document.createElement("p");
+// function renderList(products, container) {
+//   container.innerHTML = "";
+//   products.forEach((product) => {
+//     const card = document.createElement("div");
+//     const cardImg = document.createElement("img");
+//     const cardTitle = document.createElement("h2");
+//     const cardDescription = document.createElement("p");
 
-    card.className = "card";
-    cardImg.className = "card-img";
-    // cardImg.src = product.category.image;
-    cardTitle.textContent = product.title;
-    cardDescription.textContent = product.description;
+//     card.className = "card";
+//     cardImg.className = "card-img";
+//     // cardImg.src = product.category.image;
+//     cardTitle.textContent = product.title;
+//     cardDescription.textContent = product.description;
 
-    container.append(card);
-    card.appendChild(cardImg);
-    card.appendChild(cardTitle);
-    card.appendChild(cardDescription);
-  });
-}
+//     container.append(card);
+//     card.appendChild(cardImg);
+//     card.appendChild(cardTitle);
+//     card.appendChild(cardDescription);
+//   });
+// }
 
-const render = async () => {
-  const response = await GET();
-  renderList(response, containerEl);
-};
+// const render = async () => {
+//   const response = await GET();
+//   renderList(response, containerEl);
+// };
 
 // render();
 
 
 //PUT METHOD
 const PUT = async (id, product) => {
-  const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(product),
-  });
-  const data = res.json();
+  try {
+    const res = await fetch(`${BASE_URL}${endpointProducts}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(product),
+    });
+    const data = await res.json();
+  
+    return data;
 
-  return data;
+  } catch (error) {
+    errorHandler(error.message);
+    
+  }
 };
 
-// const editProduct = async (id, product) => {
-//   console.log(await PUT(id, product));
-// };
+
+//SEARCH Product by Id
 let id = 0;
-searchButtonEl.addEventListener("click", async (event) => {
+searchButtonEl.addEventListener("click", async () => {
     id = Number(inputId.value);
     let findProduct = await getById(id);
-    console.log(findProduct);
+    // if (inputTitleEl.value && !inputPriceEl.value) return;
     inputTitleEl.value = findProduct.title;
     inputPriceEl.value = findProduct.price;
     inputDescriptionEl.value = findProduct.description;
     inputCategoryEl.value = findProduct.category.id;
     inputImagesEl.value = findProduct.images;
+    
   }
 
 );
 
 
-
+//Modify product 
   modifyButtonEl.addEventListener("click", async () => {
     const updateProduct = {
       title: inputTitleEl.value,
@@ -204,8 +214,8 @@ searchButtonEl.addEventListener("click", async (event) => {
       images: [inputImagesEl.value],
     };
 
-    PUT(id, updateProduct);
+    await PUT(id, updateProduct);
     console.log(id, updateProduct);
-    //  console.log(await PUT(id, updateProduct));
+
   });
 
