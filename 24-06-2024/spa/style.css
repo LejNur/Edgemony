@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+.container {
+  width: min(88%, 75rem);
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+}
+
+ul.list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+li.item {
+  display: block;
+}
+
+li.item a {
+  display: inline-block;
+  padding: 0.7rem 0;
+  color: inherit;
+}
+
+.footer {
+  padding: 2rem 0 4rem;
+}
+
+.footer .nav {
+  flex: 1;
+}
+
+.footer .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+ul.menu ul li a {
+  padding: 0;
+  text-decoration: none;
+}
+
+ul.menu>li>a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: -1rem;
+}
