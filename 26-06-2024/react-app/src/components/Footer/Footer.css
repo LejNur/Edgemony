@@ -1,0 +1,41 @@
+.footer {
+  padding: 2rem 0 4rem;
+}
+
+.footer .nav {
+  flex: 1;
+}
+
+.footer .menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Submenu*/
+ul.menu .item .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+
+ul.menu li a {
+  padding: 0;
+  text-decoration: none;
+  transition: all ease 300ms;
+}
+
+ul.menu>li>a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+ul.menu li a:hover {
+  color: #e6d300;
+  letter-spacing: 2px;
+  ;
+}

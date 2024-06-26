@@ -1,0 +1,50 @@
+div.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+}
+
+
+article[role="list-item"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.avatar-img {
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #e6d300;
+  padding: 0 2rem;
+
+}
+
+.sideBar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  font-weight: 100;
+  transition: all ease 300ms;
+}
+
+.sideBar a:hover {
+  color: #FEFCFF;
+  letter-spacing: 2px;
+}

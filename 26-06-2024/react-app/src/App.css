@@ -1,0 +1,33 @@
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  background-color: #FEFCFF;
+}
+
+main {
+  padding: 4rem 0 4rem;
+}
+
+.container {
+  width: min(88%, 75rem);
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+.main-grid {
+  display: grid;
+  grid-template-columns: max(20%, 100px) 1fr;
+  gap: 1rem;
+}

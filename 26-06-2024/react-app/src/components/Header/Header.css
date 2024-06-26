@@ -1,0 +1,28 @@
+.logo {
+  width: 60px;
+}
+
+ul.list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+li.item {
+  display: block;
+}
+
+li.item a {
+  display: inline-block;
+  padding: 0.7rem 0;
+  color: inherit;
+  text-decoration: none;
+  transition: all ease 300ms;
+}
+
+ul.list li a:hover {
+  color: #e6d300;
+  transform: scale(1.2);
+  letter-spacing: 1.8;
+}
