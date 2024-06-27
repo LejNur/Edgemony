@@ -1,0 +1,21 @@
+.wrapper {
+  width: 30%;
+  margin: 10% auto;
+  padding: 2rem 3rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 16px;
+}
+
+.number {
+  font-size: 108px;
+  padding: 3rem;
+  color: #702283;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

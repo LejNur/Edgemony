@@ -1,0 +1,26 @@
+.btn {
+  padding: 12px 24px;
+  font-size: 32px;
+  border-radius: 8px;
+  border: none;
+  color: whitesmoke;
+  transition: all ease 300ms;
+}
+
+.btn:first-of-type {
+  background-color: #962071;
+}
+
+.btn:nth-of-type(2) {
+  background-color: #FDB44B;
+}
+
+.btn:last-of-type {
+  background-color: #76B39D;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+  cursor: pointer;
+  transform: scale(1.02);
+}
