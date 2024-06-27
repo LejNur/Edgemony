@@ -1,0 +1,8 @@
+.keyboard {
+  background: #191919;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 16px 16px;
+}
