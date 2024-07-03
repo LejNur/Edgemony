@@ -1,0 +1,111 @@
+.formCard {
+  background-color: var(--neutral-white);
+  width: 70%;
+  padding: 2rem 1.5rem;
+  margin: 15% auto;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+input,
+textarea,
+.queryType>div {
+  border: 1px solid var(--neutral-grey-darker);
+  border-radius: 8px;
+  padding: 1rem 0;
+}
+
+
+label {
+  font-size: var(--font-size-labels);
+  color: var(--neutral-grey-darker);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: var(--neutral-grey-darker);
+}
+
+
+.inputFirstName,
+.inputLastName {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFirstName {
+  grid-column: 1;
+}
+
+.inputLastName {
+  grid-column: 2;
+}
+
+.inputEmail {
+  grid-row: 3;
+  grid-column: span 2;
+}
+
+.queryType {
+  grid-row: 4;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  row-gap: 5px;
+}
+
+
+
+.queryType>div {
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+
+.inputMessage {
+  grid-row: 5;
+  grid-column: span 2;
+}
+
+.consent {
+  grid-row: 6;
+  grid-column: span 2
+}
+
+.button {
+  grid-row: 7;
+  grid-column: span 2;
+  background-color: var(--primary-color-medium);
+  color: var(--neutral-white);
+  border: none;
+  border-radius: 8px;
+  padding: 1.2rem;
+  font-size: var(--font-size-labels);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+input[type='email'] {
+  width: 100%;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.queryType label:not(:first-child) {
+  margin: 0;
+}

@@ -1,0 +1,24 @@
+.modalCard {
+  background-color: var(--neutral-white);
+  width: 60%;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  margin: 15% auto;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+span {
+  color: var(--primary-color-medium);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+p {
+  color: var(--neutral-grey-medium);
+  font-size: 18px;
+  letter-spacing: 3px;
+}
