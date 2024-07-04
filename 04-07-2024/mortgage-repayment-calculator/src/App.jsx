@@ -14,7 +14,7 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
 
   function handleInput(e) {
-    e.preventDefault();
+    // e.preventDefault(); because of event.preventDefault I needed to click input radio two times
     const inputValue = e.target.value;
     const inputName = e.target.name;
     setFormObject((prevState) => ({ ...prevState, [inputName]: inputValue }));
