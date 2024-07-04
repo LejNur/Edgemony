@@ -1,0 +1,9 @@
+.mainCard {
+  background-color: var(--color-white);
+  width: 70%;
+  margin: 10% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 14px;
+
+}
