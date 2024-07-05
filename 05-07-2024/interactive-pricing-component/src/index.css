@@ -21,7 +21,7 @@
   --white: hsl(0, 0%, 100%);
   --very-pale-blue: hsl(230, 100%, 99%);
   --light-gray-blue: hsl(224, 65%, 95%);
-  --darker-gray-blue: hsl(223, 50%, 87%);
+  --dark-gray-blue: hsl(223, 50%, 87%);
   --gray-blue: hsl(225, 20%, 60%);
   --dark-blue: hsl(227, 35%, 25%);
 
@@ -34,6 +34,7 @@
 }
 
 body {
+  background-color: var(--very-pale-blue);
   background-image: url('../src/icons/bgPattern.svg');
   background-position: top;
   background-repeat: no-repeat;

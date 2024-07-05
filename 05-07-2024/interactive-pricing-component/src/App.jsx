@@ -10,28 +10,26 @@ function App() {
     setRange(e.target.value);
   }
 
-  function calculateDiscount() {}
-
   const rangeValues = {
     0: {
       views: "10K",
-      per_month: 8,
+      per_month: isChecked ? 8 * 0.75 : 8,
     },
     1: {
       views: "50K",
-      per_month: 12,
+      per_month: isChecked ? 12 * 0.75 : 12,
     },
     2: {
       views: "100K",
-      per_month: 16,
+      per_month: isChecked ? 16 * 0.75 : 16,
     },
     3: {
       views: "500K",
-      per_month: 24,
+      per_month: isChecked ? 24 * 0.75 : 24,
     },
     4: {
       views: "1M",
-      per_month: 36,
+      per_month: isChecked ? 36 * 0.75 : 36,
     },
   };
 
@@ -45,8 +43,12 @@ function App() {
       <div className="mainCard">
         <div className="displayResults">
           <p>{rangeValues[range].views} PAGEVIEWS</p>
-          <span>
-            ${rangeValues[range].per_month} <span>/month</span>
+          <span className="calcResult">
+            {rangeValues[range].per_month.toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+            })}
+            <span>/month</span>
           </span>
         </div>
 
@@ -55,7 +57,7 @@ function App() {
             type="range"
             min="0"
             max="4"
-            step="1"
+            // step="1"
             onInput={(e) => handleRange(e)}
           />
         </label>
@@ -72,9 +74,8 @@ function App() {
             <span className="slider round"></span>
           </label>
           <p>Yearly Billing</p>
-          <span>25% discount</span>
+          <span className="discountSpan">25% discount</span>
         </div>
-        <hr />
 
         <div className="cta">
           <div className="iconsBox">
@@ -83,16 +84,16 @@ function App() {
               <span>Ulimited websites</span>
             </div>
             <div>
-              <img src={iconCheck} alt="" />
+              <img src={iconCheck} alt="icon-check" />
               <span>100% data ownership</span>
             </div>
             <div>
-              <img src={iconCheck} alt="" />
+              <img src={iconCheck} alt="icon-check" />
               <span>Email reports</span>
             </div>
           </div>
           <div>
-            <button>Start my trial</button>
+            <button className="ctaButton">Start my trial</button>
           </div>
         </div>
       </div>

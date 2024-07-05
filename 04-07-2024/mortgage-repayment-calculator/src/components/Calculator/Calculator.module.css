@@ -37,7 +37,8 @@
 
 
 .term input,
-.rate input {
+.rate input,
+.mortgageType {
   padding-left: 20px;
 }
 
