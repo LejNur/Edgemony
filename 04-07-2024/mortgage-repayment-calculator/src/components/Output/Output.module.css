@@ -94,3 +94,15 @@ h2 {
   }
 
 }
+
+/* mobile */
+@media screen and (min-width:375px) and (max-width:767px) {
+  .defaultScreen {
+    border-radius: 0px;
+  }
+
+  .outputContainer {
+    border-radius: 0px 14px 14px 14px;
+  }
+
+}

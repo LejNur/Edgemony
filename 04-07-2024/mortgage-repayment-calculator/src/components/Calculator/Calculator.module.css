@@ -101,7 +101,7 @@ label {
 
 .calculateButton {
   grid-column: span 2;
-  max-width: 70%;
+  width: 70%;
   min-width: fit-content;
   display: flex;
   justify-content: center;
@@ -170,11 +170,41 @@ input[type='radio']:checked:before {
   border: 2px solid var(--primary-lime);
 }
 
+
+/* tablet */
 @media screen and (min-width:768px) and (max-width:1340px) {
   .calculateButton {
     grid-column: span 2;
-    max-width: 45%;
+    width: 55%;
   }
 
+}
+
+
+/* mobile */
+@media screen and (min-width:375px) and (max-width:767px) {
+  .mainCard {
+    grid: unset;
+  }
+
+  .gridFormContainer {
+    display: block;
+    padding: 1rem;
+  }
+
+  .calculateButton {
+    width: 100%;
+  }
+
+  .calculatorContainer {
+    padding: 0;
+  }
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+  }
 
 }
