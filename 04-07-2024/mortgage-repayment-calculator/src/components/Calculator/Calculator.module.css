@@ -17,8 +17,6 @@
 }
 
 
-
-
 .gridFormContainer div:nth-child(4) {
   grid-row: 3;
   grid-column: span 2;
@@ -31,11 +29,12 @@
   width: 100%;
   border: 1px solid var(--slate-900);
   padding: 0.8rem;
-  margin-bottom: 10px;
+  margin-block: 10px;
   border-radius: 6px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding-left: 50px;
 }
+
 
 .term input,
 .rate input {
@@ -56,9 +55,6 @@
 
 .inputWrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 
@@ -86,10 +82,8 @@
 }
 
 
-
-
 label {
-  color: var(--slate-700)
+  color: var(--slate-700);
 }
 
 .mortgageType {
@@ -107,7 +101,8 @@ label {
 
 .calculateButton {
   grid-column: span 2;
-  width: 70%;
+  max-width: 70%;
+  min-width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,21 +114,19 @@ label {
   padding: 0.8rem 2rem;
   border-radius: 46px;
   cursor: pointer;
-}
-
-.calculateButton span {
   white-space: nowrap;
 }
+
 
 .clearButton {
   border: none;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-
-input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -156,6 +149,7 @@ input[type='radio'] {
   aspect-ratio: 1;
   border: 1px solid var(--primary-lime);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 input[type='radio']:before {
@@ -176,6 +170,11 @@ input[type='radio']:checked:before {
   border: 2px solid var(--primary-lime);
 }
 
-.mortgageType:hover {
-  cursor: pointer;
+@media screen and (min-width:768px) and (max-width:1340px) {
+  .calculateButton {
+    grid-column: span 2;
+    max-width: 45%;
+  }
+
+
 }

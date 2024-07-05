@@ -37,7 +37,18 @@ function Output(props) {
     years
   );
   const monthlyPayment = mortgageDetails.monthlyPayment;
-  const totalPayments = parseFloat(mortgageDetails.totalPayments);
+  const totalPayments = mortgageDetails.totalPayments;
+
+  // Format monthlyPayment and totalPayments as currency
+  const monthlyPaymentFormatted = new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+  }).format(monthlyPayment);
+
+  const totalPaymentsFormatted = new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+  }).format(totalPayments);
 
   return (
     <>
@@ -63,13 +74,13 @@ function Output(props) {
           <div className={styles.result}>
             <p className={styles.subtitle}>Your monthly repayments</p>
             <h3 className={styles.monthlyRepayments}>
-              £{monthlyPayment.toFixed(2)}
+              {monthlyPaymentFormatted}
             </h3>
             <hr />
             <p className={styles.totalPaymentParagraph}>
               Total you'll pay over the term
             </p>
-            <p className={styles.totalPayment}>£{totalPayments.toFixed(4)}</p>
+            <p className={styles.totalPayment}>{totalPaymentsFormatted}</p>
           </div>
         </div>
       )}

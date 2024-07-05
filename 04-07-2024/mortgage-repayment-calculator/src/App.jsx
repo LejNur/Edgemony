@@ -32,6 +32,7 @@ function App() {
       rate: "",
       mortgageType: "",
     });
+    setIsVisible(false);
   }
 
   return (

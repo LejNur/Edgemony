@@ -5,5 +5,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 14px;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1340px) {
+  .mainCard {
+    grid-template-columns: 1fr;
+  }
 
 }
