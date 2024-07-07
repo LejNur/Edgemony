@@ -4,37 +4,51 @@ import illustrationEmpty from "../../assets/icons/illustrationEmpty.svg";
 function Output(props) {
   const { isVisible, formObject } = props;
 
-  function calculateMonthlyMortgage(principal, annualInterestRate, years) {
-    // Convert the annual interest rate to a monthly rate
+  function calculateMonthlyMortgage(
+    principal,
+    annualInterestRate,
+    years,
+    mortgageType
+  ) {
     const monthlyInterestRate = annualInterestRate / 12 / 100;
-
-    // Calculate the number of monthly payments
     const numberOfPayments = years * 12;
+    let monthlyPayment;
+    let totalPayments;
 
-    // Calculate the monthly mortgage payment using the formula
-    const numerator =
-      monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments);
-    const denominator = Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1;
-    const monthlyPayment = principal * (numerator / denominator);
+    if (mortgageType === "Repayment") {
+      const numerator =
+        monthlyInterestRate *
+        Math.pow(1 + monthlyInterestRate, numberOfPayments);
+      const denominator =
+        Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1;
+      monthlyPayment = principal * (numerator / denominator);
+      totalPayments = monthlyPayment * numberOfPayments;
+    } else if (mortgageType === "Interest") {
+      monthlyPayment = principal * monthlyInterestRate;
+      totalPayments = monthlyPayment * numberOfPayments;
+    } else {
+      return {
+        monthlyPayment: 0,
+        totalPayments: 0,
+      };
+    }
 
-    // Calculate the total amount paid over the term
-    const totalPayments = monthlyPayment * numberOfPayments;
-
-    // Return both the monthly payment and total payments
     return {
       monthlyPayment: monthlyPayment,
       totalPayments: totalPayments,
     };
   }
 
-  const principal = formObject.amount; // Mortgage amount
-  const annualInterestRate = formObject.rate; // Annual interest rate in percentage
-  const years = formObject.years; // Mortgage term in years
+  const principal = parseFloat(formObject.amount); // Mortgage amount
+  const annualInterestRate = parseFloat(formObject.rate); // Annual interest rate in percentage
+  const years = parseFloat(formObject.years); // Mortgage term in years
+  const mortgageType = formObject.mortgageType; // Mortgage type
 
   const mortgageDetails = calculateMonthlyMortgage(
     principal,
     annualInterestRate,
-    years
+    years,
+    mortgageType
   );
   const monthlyPayment = mortgageDetails.monthlyPayment;
   const totalPayments = mortgageDetails.totalPayments;

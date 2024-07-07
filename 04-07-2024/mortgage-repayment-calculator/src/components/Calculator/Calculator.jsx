@@ -60,7 +60,8 @@ function Calculator(props) {
               <input
                 type="radio"
                 name="mortgageType"
-                value={formObject.mortgageType}
+                value="Repayment"
+                checked={formObject.mortgageType === "Repayment"}
                 onChange={(e) => onInput(e)}
               />
               <label htmlFor=""> Repayment</label>
@@ -69,7 +70,8 @@ function Calculator(props) {
               <input
                 type="radio"
                 name="mortgageType"
-                value={formObject.mortgageType}
+                checked={formObject.mortgageType === "Interest"}
+                value="Interest"
                 onChange={(e) => onInput(e)}
               />
               <label htmlFor="">Interest Only</label>
