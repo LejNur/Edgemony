@@ -14,13 +14,15 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
 
   function handleInput(e) {
-    // e.preventDefault(); because of event.preventDefault I needed to click input radio two times
     const inputValue = e.target.value;
     const inputName = e.target.name;
-    setFormObject((prevState) => ({ ...prevState, [inputName]: inputValue }));
+    setFormObject((prevState) => ({
+      ...prevState,
+      [inputName]: inputValue,
+    }));
   }
 
-  function handleVisibility(e) {
+  function onSubmit(e) {
     e.preventDefault();
     setIsVisible(true);
   }
@@ -40,7 +42,7 @@ function App() {
       <div className="mainCard">
         <Calculator
           onInput={handleInput}
-          onHandleVisibility={handleVisibility}
+          onHandleSubmit={onSubmit}
           onHandleClear={onClear}
           formObject={formObject}
         />

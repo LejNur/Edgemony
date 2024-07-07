@@ -2,7 +2,7 @@ import styles from "./Calculator.module.css";
 import iconCalculator from "../../assets/icons/iconCalculator.svg";
 
 function Calculator(props) {
-  const { onInput, onHandleVisibility, onHandleClear, formObject } = props;
+  const { onInput, onHandleSubmit, onHandleClear, formObject } = props;
 
   return (
     <div className={styles.calculatorContainer}>
@@ -13,7 +13,7 @@ function Calculator(props) {
         </button>
       </div>
 
-      <form onSubmit={(e) => onHandleVisibility(e)}>
+      <form onSubmit={(e) => onHandleSubmit(e)}>
         <div className={styles.gridFormContainer}>
           <div>
             <label htmlFor="">Mortgage Amount</label>
