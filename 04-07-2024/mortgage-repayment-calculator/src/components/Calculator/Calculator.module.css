@@ -183,29 +183,43 @@ input[type='radio']:checked:before {
 
 
 /* mobile */
-@media screen and (min-width:375px) and (max-width:767px) {
+@media screen and (max-width:767px) {
   .mainCard {
     grid: unset;
-  }
-
-  .gridFormContainer {
-    display: block;
-    padding: 1rem;
-  }
-
-  .calculateButton {
-    width: 100%;
-  }
-
-  .calculatorContainer {
-    padding: 0;
   }
 
   .titleContainer {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding: 1.5rem 0rem;
   }
+
+
+  .titleContainer h1 {
+    white-space: nowrap;
+  }
+
+  .gridFormContainer {
+    display: block;
+    padding: 0;
+  }
+
+  .gridFormContainer label:not(.mortgageType> label) {
+    display: inline-block;
+    margin-block: 10px;
+  }
+
+
+  .calculateButton {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .calculatorContainer {
+    padding: 1.5rem;
+  }
+
+
 
 }
