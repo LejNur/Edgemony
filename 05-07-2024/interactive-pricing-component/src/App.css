@@ -1,9 +1,10 @@
 .titleWrapper {
-  margin: 4rem auto;
+  margin: 2rem auto;
   text-align: center;
   background-image: url('../src/icons/patternCircles.svg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   padding: 2rem;
 }
 
@@ -21,22 +22,20 @@
 
 .mainCard {
   background-color: var(--white);
-  width: 40%;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  min-width: 50%;
+  width: fit-content;
+  margin-bottom: 4rem;
   border-radius: 14px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .displayResults {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
-  padding: 2rem;
+  row-gap: 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .displayResults p {
@@ -62,35 +61,39 @@
   font-size: 16px;
 }
 
+.displayResults div {
+  width: 100%;
+  grid-column: span 2;
+}
 
-
+/* Input range */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  accent-color: var(--soft-cyan);
   cursor: pointer;
   width: 100%;
   padding: 0px 2rem;
   margin-block: 2rem;
+
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   appearance: none;
   box-shadow: none;
   border: none !important;
   border-radius: 16px;
   height: 0.5rem;
-  background-color: var(--light-gray-blue);
+  background: linear-gradient(to right,
+      var(--soft-cyan) calc((var(--range-value) / var(--range-max)) * 100%),
+      var(--light-gray-blue) calc((var(--range-value) / var(--range-max)) * 100%));
 }
-
-
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   margin-top: -12px;
-  background-color: var(--cyan);
+  background-color: hsl(174, 77%, 70%);
   background-image: url('../src/icons/iconSlider.svg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -98,9 +101,14 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 1.2rem 1rem;
   height: 2rem;
   aspect-ratio: 1;
-  box-shadow: 0px 5px 25px var(--soft-cyan);
+  box-shadow: 0px 15px 25px var(--soft-cyan);
+  cursor: pointer;
 }
 
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: var(--cyan);
+  cursor: grabbing;
+}
 
 
 .billingContainer {
@@ -127,32 +135,13 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 4px 8px;
 }
 
-
-.iconsBox {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.discountSpan::after {
+  content: ' discount'
 }
 
-.iconsBox div {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+
 
 /* The switch - the box around the slider */
 .switch {
@@ -220,12 +209,27 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
+
+/* CTA section */
+
 .cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
   border-top: 1.5px solid var(--light-gray-blue);
+}
+
+.iconsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.iconsBox div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .ctaButton {
@@ -243,4 +247,103 @@ input:checked+.slider:before {
   font-size: var(--font-size-paragraph);
   color: var(--gray-blue);
   font-weight: var(--font-weight-600);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .titleWrapper {
+    margin: 1rem;
+    padding: 4rem;
+  }
+
+  .titleWrapper h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .titleWrapper h2 {
+    font-size: 18px;
+    white-space: pre-line;
+  }
+
+  .mainCard {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+
+  .displayResults {
+    padding: 2rem 1.5rem;
+    row-gap: 0.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .displayResults p {
+    grid-column: span 2;
+    font-size: 18px;
+    color: var(--gray-blue);
+    font-weight: var(--font-weight-800);
+    letter-spacing: 2.8px;
+  }
+
+  .calcResult {
+    grid-column: span 2;
+    letter-spacing: 2.5px;
+  }
+
+  .calcResult>span {
+    margin-left: 15px;
+  }
+
+  .displayResults div {
+    grid-row: 2;
+  }
+
+
+  .billingContainer p {
+    font-size: 14px;
+  }
+
+  .discountSpan {
+    background-color: var(--light-red);
+    color: var(--dark-red);
+    font-weight: var(--font-weight-600);
+    border-radius: 16px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+
+  .discountSpan::before {
+    content: '-';
+  }
+
+  .discountSpan::after {
+    content: ' '
+  }
+
+
+
+  .billingContainer {
+    gap: 0.5rem;
+    padding: 1.2rem;
+  }
+
+
+
+  /* CTA section */
+  .cta {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .iconsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .iconsBox div {
+    justify-content: center;
+    gap: 1rem;
+  }
+
 }

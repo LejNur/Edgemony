@@ -8,6 +8,7 @@ function App() {
 
   function handleRange(e) {
     setRange(e.target.value);
+    e.target.style.setProperty("--range-value", value);
   }
 
   const rangeValues = {
@@ -50,17 +51,25 @@ function App() {
             })}
             <span>/month</span>
           </span>
+
+          <div>
+            <label htmlFor="range">
+              <input
+                type="range"
+                min="0"
+                max="4"
+                value={range}
+                // step="1"
+                onInput={(e) => handleRange(e)}
+                style={{
+                  "--range-value": range,
+                  "--range-max": "4",
+                }}
+              />
+            </label>
+          </div>
         </div>
 
-        <label htmlFor="range">
-          <input
-            type="range"
-            min="0"
-            max="4"
-            // step="1"
-            onInput={(e) => handleRange(e)}
-          />
-        </label>
         <br />
 
         <div className="billingContainer">
@@ -74,7 +83,7 @@ function App() {
             <span className="slider round"></span>
           </label>
           <p>Yearly Billing</p>
-          <span className="discountSpan">25% discount</span>
+          <span className="discountSpan">25%</span>
         </div>
 
         <div className="cta">
