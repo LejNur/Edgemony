@@ -1,0 +1,31 @@
+.mainContainer {
+  outline: 1px solid violet;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form input[type='text'],
+.form input[type="submit"] {
+  outline: 2px solid purple;
+  padding: 8px;
+}
+
+.todos {
+  color: rebeccapurple;
+}
+
+.todos ul button {
+  background-color: coral;
+  padding: 16px;
+  cursor: pointer;
+}
