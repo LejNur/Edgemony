@@ -81,12 +81,29 @@ h1 {
   padding: 6px;
   background-color: transparent;
   color: whitesmoke;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 18px;
   border-radius: 50%;
   transition: transform ease-in-out 200ms;
 }
 
 .todos ul button:hover {
   transform: scaleX(1.5);
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  margin: 20px 0;
+}
+
+.category button {
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
