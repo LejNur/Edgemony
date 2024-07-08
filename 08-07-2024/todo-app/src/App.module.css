@@ -1,31 +1,92 @@
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: whitesmoke;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+}
+
 .mainContainer {
-  outline: 1px solid violet;
+  background-color: #242323;
+  border-radius: 16px;
   width: 30%;
-  height: auto;
-  margin: 0 auto;
-  padding: 3rem;
+  height: fit-content;
+  margin: 10% auto;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .form input[type='text'],
 .form input[type="submit"] {
-  outline: 2px solid purple;
-  padding: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.todos {
-  color: rebeccapurple;
+.form input[type='text'] {
+  background-color: whitesmoke;
+}
+
+.form input[type="text"]::placeholder {
+  text-align: center;
+  color: #161616;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.form input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+.form input[type='submit'] {
+  background-color: #06D001;
+  color: whitesmoke;
+  font-weight: 600;
+  transition: background-color ease-in-out 200ms;
+}
+
+.form input[type='submit']:hover {
+  background-color: #039601;
+}
+
+.todos ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.todos li {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 0px 20px;
 }
 
 .todos ul button {
-  background-color: coral;
-  padding: 16px;
   cursor: pointer;
+  border: none;
+  padding: 6px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 50%;
+  transition: transform ease-in-out 200ms;
+}
+
+.todos ul button:hover {
+  transform: scaleX(1.5);
 }

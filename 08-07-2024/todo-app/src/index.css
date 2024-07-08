@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
+
+body {
+  background-color: #161616;
+}

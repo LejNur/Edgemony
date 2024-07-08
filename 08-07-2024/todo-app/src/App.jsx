@@ -4,7 +4,7 @@ import { useState } from "react";
 const defaultTodos = [
   {
     id: self.crypto.randomUUID(),
-    title: "Buy Milk",
+    title: "Buy Flowers",
   },
   {
     id: self.crypto.randomUUID(),
@@ -36,10 +36,16 @@ function App() {
 
   return (
     <>
+      <h1>ToDo List</h1>
       <div className={styles.mainContainer}>
         <form className={styles.form} onSubmit={addTodo}>
-          <input type="text" onChange={onHandleInput} value={inputValue} />
-          <input type="submit" value="Submit" />
+          <input
+            type="text"
+            placeholder="Input"
+            onChange={onHandleInput}
+            value={inputValue}
+          />
+          <input type="submit" value="ADD" />
         </form>
 
         <div className={styles.todos}>
