@@ -4,6 +4,9 @@ function Filter(props) {
   const { onHandleFilter } = props;
   return (
     <div className={styles.filterContainer}>
+      <button name="all" onClick={onHandleFilter}>
+        All students
+      </button>
       <button name="beginner" onClick={onHandleFilter}>
         Beginner Level
       </button>

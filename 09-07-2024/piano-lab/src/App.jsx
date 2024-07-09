@@ -28,7 +28,7 @@ function App() {
     level: "",
   });
 
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState("all");
 
   function handleInput(e) {
     setInput((prevState) => {
@@ -60,6 +60,11 @@ function App() {
     setStudents(newStudents);
   }
 
+  const filteredStudents =
+    filter === "all"
+      ? students
+      : students.filter((student) => student.level === filter);
+
   return (
     <>
       <h1>Piano Lab</h1>
@@ -70,17 +75,15 @@ function App() {
         inputValue={input}
       />
       <Filter onHandleFilter={handleFilter} students={students} />
-      {students
-        .filter((student) => student.level.includes(filter))
-        .map((student) => {
-          return (
-            <Student
-              student={student}
-              key={student.id}
-              onHandleDelete={handleDelete}
-            />
-          );
-        })}
+      {filteredStudents.map((student) => {
+        return (
+          <Student
+            student={student}
+            key={student.id}
+            onHandleDelete={handleDelete}
+          />
+        );
+      })}
     </>
   );
 }

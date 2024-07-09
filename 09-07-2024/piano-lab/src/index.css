@@ -18,9 +18,8 @@
   color: var(--text-color);
 }
 
-#root {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem;
-  outline: 1px solid green;
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
 }

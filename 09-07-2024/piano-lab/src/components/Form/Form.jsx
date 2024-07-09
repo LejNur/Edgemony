@@ -4,7 +4,7 @@ function Form(props) {
   const { onHandleInput, inputValue, onHandleSubmit } = props;
   console.log(inputValue);
   return (
-    <div>
+    <div className={styles.formContainer}>
       <form onSubmit={onHandleSubmit}>
         <input
           type="text"
@@ -19,6 +19,7 @@ function Form(props) {
           value={inputValue.lastName}
         />
         <select name="level" onChange={onHandleInput} value={inputValue.level}>
+          <option value="">Select Level</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>

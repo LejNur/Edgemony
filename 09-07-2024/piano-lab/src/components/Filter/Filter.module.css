@@ -1,0 +1,16 @@
+.filterContainer {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filterContainer button {
+  border: none;
+}
+
+.filterContainer button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-color: var(--accent-color);
+}
