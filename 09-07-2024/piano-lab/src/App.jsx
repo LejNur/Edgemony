@@ -8,15 +8,15 @@ import { Filter } from "./components/Filter/Filter";
 const initialState = [
   {
     id: self.crypto.randomUUID(),
-    firstName: "Giovanni",
-    lastName: "Sergi",
-    level: "advanced",
+    firstName: "Anna",
+    lastName: "Traina",
+    level: "beginner",
   },
   {
     id: self.crypto.randomUUID(),
-    firstName: "Nunzia",
-    lastName: "Lo Presti",
-    level: "beginner",
+    firstName: "Ewan",
+    lastName: "Scott",
+    level: "advanced",
   },
 ];
 
@@ -42,6 +42,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     const newStudent = {
       id: self.crypto.randomUUID(),
       firstName: input.firstName,
@@ -67,7 +68,7 @@ function App() {
 
   return (
     <>
-      <h1>Piano Lab</h1>
+      <h1>PianoLab</h1>
       <Form
         onHandleInput={handleInput}
         onHandleSubmit={handleSubmit}

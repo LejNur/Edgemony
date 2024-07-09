@@ -7,6 +7,8 @@
   --background-color: #F4F4F9;
   --text-color: #333333;
   --border-color: #DDDDDD;
+  --green-color: #3CB371;
+
 }
 
 * {
@@ -18,7 +20,7 @@
   color: var(--text-color);
 }
 
-body {
+#root {
   display: grid;
   min-height: 100vh;
   place-content: center;

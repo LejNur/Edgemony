@@ -18,7 +18,13 @@ function Form(props) {
           onChange={onHandleInput}
           value={inputValue.lastName}
         />
-        <select name="level" onChange={onHandleInput} value={inputValue.level}>
+
+        <select
+          className={styles.select}
+          name="level"
+          onChange={onHandleInput}
+          value={inputValue.level}
+        >
           <option value="">Select Level</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>

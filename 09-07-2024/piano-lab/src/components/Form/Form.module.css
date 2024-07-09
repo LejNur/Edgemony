@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 70%;
   gap: 1rem;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .formContainer input,
@@ -12,16 +12,16 @@ select,
 button {
   border: 1px solid var(--border-color);
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
   border-radius: 4px;
 }
 
 .formContainer button {
   background-color: var(--accent-color);
   border: none;
-  color: var(--background-color);
-  font-weight: 600;
+  font-weight: 300;
   transition: background-color ease-in 200ms;
+  font-size: 18px;
 }
 
 .formContainer button:hover {
@@ -31,4 +31,10 @@ button {
 .formContainer input:focus,
 .formContainer select:focus {
   outline: 1px solid var(--accent-color);
+}
+
+select option {
+  background-color: var(--primary-color);
+  font-size: 18px;
+  color: var(--background-color);
 }
