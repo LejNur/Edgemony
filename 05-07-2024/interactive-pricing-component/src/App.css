@@ -22,7 +22,7 @@
 
 .mainCard {
   background-color: var(--white);
-  min-width: 50%;
+  min-width: 40%;
   width: fit-content;
   margin-bottom: 4rem;
   border-radius: 14px;
@@ -214,9 +214,9 @@ input:checked+.slider:before {
 
 .cta {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   border-top: 1.5px solid var(--light-gray-blue);
 }
 
