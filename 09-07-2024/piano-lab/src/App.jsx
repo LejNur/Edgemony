@@ -1,35 +1,88 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import styles from "./App.module.css";
+
+import { Form } from "./components/Form/Form";
+import { Student } from "./components/Student/Student";
+import { Filter } from "./components/Filter/Filter";
+
+const initialState = [
+  {
+    id: self.crypto.randomUUID(),
+    firstName: "Giovanni",
+    lastName: "Sergi",
+    level: "advanced",
+  },
+  {
+    id: self.crypto.randomUUID(),
+    firstName: "Nunzia",
+    lastName: "Lo Presti",
+    level: "beginner",
+  },
+];
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [students, setStudents] = useState(initialState);
+  const [input, setInput] = useState({
+    firstName: "",
+    lastName: "",
+    level: "",
+  });
+
+  const [filter, setFilter] = useState("");
+
+  function handleInput(e) {
+    setInput((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
+  }
+
+  function handleFilter(e) {
+    setFilter(e.target.name);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const newStudent = {
+      id: self.crypto.randomUUID(),
+      firstName: input.firstName,
+      lastName: input.lastName,
+      level: input.level,
+    };
+
+    setStudents((prevState) => [...prevState, newStudent]);
+    setInput({ firstName: "", lastName: "", level: "" });
+  }
+
+  function handleDelete(e) {
+    const newStudents = students.filter(
+      (student) => student.id !== e.target.id
+    );
+    setStudents(newStudents);
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Piano Lab</h1>
+      <Form
+        onHandleInput={handleInput}
+        onHandleSubmit={handleSubmit}
+        onHandleFilter={handleFilter}
+        inputValue={input}
+      />
+      <Filter onHandleFilter={handleFilter} students={students} />
+      {students
+        .filter((student) => student.level.includes(filter))
+        .map((student) => {
+          return (
+            <Student
+              student={student}
+              key={student.id}
+              onHandleDelete={handleDelete}
+            />
+          );
+        })}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
