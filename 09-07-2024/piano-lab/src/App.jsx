@@ -4,6 +4,7 @@ import styles from "./App.module.css";
 import { Form } from "./components/Form/Form";
 import { Student } from "./components/Student/Student";
 import { Filter } from "./components/Filter/Filter";
+import { Layout } from "./components/Layout/Layout";
 
 const initialState = [
   {
@@ -17,6 +18,12 @@ const initialState = [
     firstName: "Ewan",
     lastName: "Scott",
     level: "advanced",
+  },
+  {
+    id: self.crypto.randomUUID(),
+    firstName: "Carlo",
+    lastName: "Genovese",
+    level: "intermediate",
   },
 ];
 
@@ -68,23 +75,24 @@ function App() {
 
   return (
     <>
-      <h1>PianoLab</h1>
-      <Form
-        onHandleInput={handleInput}
-        onHandleSubmit={handleSubmit}
-        onHandleFilter={handleFilter}
-        inputValue={input}
-      />
-      <Filter onHandleFilter={handleFilter} students={students} />
-      {filteredStudents.map((student) => {
-        return (
-          <Student
-            student={student}
-            key={student.id}
-            onHandleDelete={handleDelete}
-          />
-        );
-      })}
+      <Layout>
+        <Form
+          onHandleInput={handleInput}
+          onHandleSubmit={handleSubmit}
+          onHandleFilter={handleFilter}
+          inputValue={input}
+        />
+        <Filter onHandleFilter={handleFilter} students={students} />
+        {filteredStudents.map((student) => {
+          return (
+            <Student
+              student={student}
+              key={student.id}
+              onHandleDelete={handleDelete}
+            />
+          );
+        })}
+      </Layout>
     </>
   );
 }

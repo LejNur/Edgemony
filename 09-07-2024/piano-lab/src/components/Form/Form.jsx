@@ -2,7 +2,7 @@ import styles from "./Form.module.css";
 
 function Form(props) {
   const { onHandleInput, inputValue, onHandleSubmit } = props;
-  console.log(inputValue);
+
   return (
     <div className={styles.formContainer}>
       <form onSubmit={onHandleSubmit}>

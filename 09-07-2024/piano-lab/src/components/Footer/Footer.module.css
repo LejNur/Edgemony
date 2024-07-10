@@ -1,0 +1,41 @@
+.footerContainer {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 60px;
+}
+
+.footerContainer .socialIcons,
+p,
+span {
+  background-color: transparent;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.socialIcons>span ion-icon {
+  color: var(--background-color);
+  transition: all ease 200ms;
+}
+
+.footerContainer p {
+  color: var(--background-color);
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.footerContainer span ion-icon:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+  transform: translateY(-10px);
+}

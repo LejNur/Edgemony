@@ -1,0 +1,69 @@
+.headerContainer {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+}
+
+.headerContainer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+nav>span {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: transparent;
+}
+
+span h1 {
+  font-size: 36px;
+  background-color: transparent;
+  color: var(--background-color);
+}
+
+span ion-icon {
+  font-size: 40px;
+  color: var(--background-color);
+  background-color: transparent;
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 2.5rem;
+  background-color: transparent;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.navbarLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
+}
+
+.navbarLinks a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.navbarLinks a:hover::after,
+.navbarLinks a:focus::after {
+  transform: translate3d(0, 0, 0);
+}
