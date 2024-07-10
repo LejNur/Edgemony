@@ -49,7 +49,8 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
+    if (input.firstName === "" || input.lastName === "" || input.level === "")
+      return;
     const newStudent = {
       id: self.crypto.randomUUID(),
       firstName: input.firstName,

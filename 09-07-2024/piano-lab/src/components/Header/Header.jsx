@@ -12,6 +12,7 @@ function Header() {
           <a href="#">Home</a>
           <a href="#">Exercises</a>
           <a href="#">Scores</a>
+          <a href="#">Lesson review</a>
         </div>
       </nav>
     </div>
