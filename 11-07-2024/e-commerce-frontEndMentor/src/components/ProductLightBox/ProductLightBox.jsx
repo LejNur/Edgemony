@@ -46,7 +46,6 @@ function ProductLightBox() {
               <Thumbnail
                 isSelected={product.id === selectedProduct.id}
                 thumbNail={product.thumbNail}
-                // handleSelect={() => handleClick(product.id)}
               />
             </li>
           );
