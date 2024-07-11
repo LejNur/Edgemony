@@ -22,10 +22,12 @@ function ProductDetailsBox() {
       </p>
 
       <span>$250.00</span>
-      <Button text={"Add to cart"}>
-        <IconCart fill="#000000" />
-      </Button>
-      <Counter />
+      <div className={classNames(styles.buttonsContainer)}>
+        <Button text={"Add to cart"}>
+          <IconCart fill="#000000" />
+        </Button>
+        <Counter />
+      </div>
     </div>
   );
 }
