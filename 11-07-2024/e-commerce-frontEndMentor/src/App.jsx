@@ -6,7 +6,6 @@ import { ProductLightBox } from "./components/ProductLightBox/ProductLightBox";
 function App() {
   return (
     <>
-      <h1>hello world!</h1>
       <Button text={"Add to cart"}>
         <IconCart fill="#000000" />
       </Button>
