@@ -10,19 +10,18 @@
 
 }
 
-/* (with 75% opacity for lightbox background): */
 
 
 @font-face {
   font-family: 'KumbhSans';
-  src: url("/e-commerce-frontEndMentor/public/fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf") format(truetype);
+  src: url("../public/fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'KumbhSans';
-  src: url("/e-commerce-frontEndMentor/public/fonts/Kumbh_Sans/static/KumbhSans-Bold.ttf") format('truetype');
+  src: url("../public/fonts/Kumbh_Sans/static/KumbhSans-Bold.ttf") format('truetype');
   font-weight: 700;
   font-style: normal;
 }

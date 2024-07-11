@@ -1,18 +1,14 @@
 import styles from "./App.module.css";
-import ProductDetailsBox from "./components/ProductDetailsBox/ProductDetailsBox";
-// import { Button } from "./components/Button/Button";
-// import { IconCart } from "./components/Icons/IconCart";
-// import { Counter } from "./components/Counter/Counter";
+import { ProductDetailsBox } from "./components/ProductDetailsBox/ProductDetailsBox";
 import { ProductLightBox } from "./components/ProductLightBox/ProductLightBox";
+import { Layout } from "./components/Layout/Layout";
 function App() {
   return (
     <>
-      {/* <Button text={"Add to cart"}>
-        <IconCart fill="#000000" />
-      </Button>
-      <Counter /> */}
-      <ProductLightBox />
-      <ProductDetailsBox />
+      <Layout>
+        <ProductLightBox />
+        <ProductDetailsBox />
+      </Layout>
     </>
   );
 }
