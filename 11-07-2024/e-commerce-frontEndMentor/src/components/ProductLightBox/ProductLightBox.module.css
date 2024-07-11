@@ -1,0 +1,10 @@
+.product-lightbox {
+  width: 450px;
+}
+
+.thumbnail-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  list-style: none;
+}
