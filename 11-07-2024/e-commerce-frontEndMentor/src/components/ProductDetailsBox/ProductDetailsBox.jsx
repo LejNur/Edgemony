@@ -1,5 +1,6 @@
 import styles from "./ProductDetailsBox.module.css";
 import classNames from "classnames";
+import { useState } from "react";
 import { Button } from "../Button/Button";
 import { IconCart } from "../Icons/IconCart";
 import { Counter } from "../Counter/Counter";
