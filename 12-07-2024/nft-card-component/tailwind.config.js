@@ -10,7 +10,14 @@ export default {
       line: "#2f415b",
       white: "#ffffff",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        outfit: ["Outfit", "sans-serif"],
+      },
+      boxShadow: {
+        mainBgShadow: "0px 30px 10px 20px  rgba(13, 25, 38)",
+      },
+    },
   },
   plugins: [],
 };
