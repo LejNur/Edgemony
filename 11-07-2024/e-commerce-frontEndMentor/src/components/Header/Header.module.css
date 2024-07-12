@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--light-grayish-blue);
+  padding: 20px 0;
+}
+
+.logoContainer {
+  display: flex;
+  align-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.logoContainer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  color: var(--dark-grayish-blue);
+
+}
+
+.logoContainer nav ul li:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 34px;
+  text-decoration-color: var(--orange);
+}
+
+.navbarIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.navbarIcons img {
+  width: 30%;
+}
+
+/* Nedostaje bijeli over */
+.navbarIcons img:hover {
+  outline: 3px solid var(--orange);
+  border-radius: 50%;
+}
