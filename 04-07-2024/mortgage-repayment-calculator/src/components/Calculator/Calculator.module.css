@@ -31,10 +31,24 @@
   padding: 0.8rem;
   margin-block: 10px;
   border-radius: 6px;
-  /* margin-top: 10px; */
   padding-left: 50px;
 }
 
+/* Error input border*/
+.gridFormContainer div:first-child input.inputError,
+.term input.inputError,
+.rate input.inputError,
+.mortgageType input.inputError {
+  border: 2px solid var(--primary-red);
+}
+
+/* Error icon background */
+.icon.iconError {
+  background-color: var(--primary-red);
+  color: var(--color-white);
+  font-weight: var(--font-weight-700);
+  padding: 12px;
+}
 
 .term input,
 .rate input,
@@ -59,14 +73,13 @@
 
 }
 
-
 .icon {
   background-color: var(--slate-100);
   position: absolute;
   right: 1px;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0.7rem;
+  padding: 11px;
   border-radius: 6px;
   color: var(--slate-700);
   font-weight: var(--font-weight-700);
@@ -146,6 +159,7 @@ input[type='number']::-webkit-inner-spin-button {
 
 input[type='radio'] {
   -webkit-appearance: none;
+  appearance: none;
   width: 18px;
   aspect-ratio: 1;
   border: 1px solid var(--primary-lime);
@@ -171,9 +185,17 @@ input[type='radio']:checked:before {
   border: 2px solid var(--primary-lime);
 }
 
+/* handling error */
+.error {
+  color: var(--primary-red);
+}
+
+
+
+
 
 /* tablet */
-@media screen and (min-width:768px) and (max-width:1340px) {
+@media screen and (min-width:768px) and (max-width:1440px) {
   .calculateButton {
     grid-column: span 2;
     width: 55%;
@@ -219,7 +241,5 @@ input[type='radio']:checked:before {
   .calculatorContainer {
     padding: 1.5rem;
   }
-
-
 
 }

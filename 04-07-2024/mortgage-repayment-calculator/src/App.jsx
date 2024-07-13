@@ -12,6 +12,7 @@ function App() {
   });
 
   const [isVisible, setIsVisible] = useState(false);
+  const [error, setError] = useState("");
 
   function handleInput(e) {
     const inputValue = e.target.value;
@@ -25,6 +26,15 @@ function App() {
   function onSubmit(e) {
     e.preventDefault();
     setIsVisible(true);
+    if (
+      formObject.amount === "" ||
+      formObject.years === "" ||
+      formObject.rate === "" ||
+      formObject.mortgageType === ""
+    ) {
+      console.log("error");
+      setError("This field is required");
+    }
   }
 
   function onClear() {
@@ -35,6 +45,7 @@ function App() {
       mortgageType: "",
     });
     setIsVisible(false);
+    setError("");
   }
 
   return (
@@ -45,6 +56,7 @@ function App() {
           onHandleSubmit={onSubmit}
           onHandleClear={onClear}
           formObject={formObject}
+          error={error}
         />
         <Output isVisible={isVisible} formObject={formObject} />
       </div>
