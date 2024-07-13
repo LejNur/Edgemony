@@ -21,7 +21,7 @@ function Card() {
       <div className="flex justify-between my-4">
         <span className="flex items-center gap-2">
           <img src="images/icon-ethereum.svg" alt="ethereum icon" />
-          <span className="text-cyan">0.041 ETH</span>
+          <span className="text-cyan font-bold">0.041 ETH</span>
         </span>
         <span className="flex items-center gap-2">
           <img src="images/icon-clock.svg" alt="clock icon" />
