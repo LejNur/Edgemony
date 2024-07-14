@@ -163,9 +163,13 @@ input[type='radio'] {
   appearance: none;
   width: 18px;
   aspect-ratio: 1;
-  border: 1px solid var(--primary-lime);
+  border: 1px solid var(--slate-900);
   border-radius: 50%;
   cursor: pointer;
+}
+
+input[type='radio']:checked {
+  border: 1px solid var(--primary-lime);
 }
 
 input[type='radio']:before {
@@ -179,6 +183,7 @@ input[type='radio']:before {
 
 input[type='radio']:checked:before {
   background-color: var(--primary-lime);
+
 }
 
 .mortgageType:has(input[type="radio"]:checked) {
