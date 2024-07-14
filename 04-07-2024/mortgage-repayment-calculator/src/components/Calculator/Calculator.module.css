@@ -139,6 +139,7 @@ label {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 4px;
+  white-space: nowrap;
 }
 
 input[type='number']::-webkit-inner-spin-button {

@@ -17,6 +17,7 @@ function App() {
   function handleInput(e) {
     const inputValue = e.target.value;
     const inputName = e.target.name;
+
     setFormObject((prevState) => ({
       ...prevState,
       [inputName]: inputValue,
@@ -32,7 +33,7 @@ function App() {
       formObject.rate === "" ||
       formObject.mortgageType === ""
     ) {
-      console.log("error");
+      setIsVisible(false);
       setError("This field is required");
     }
   }
