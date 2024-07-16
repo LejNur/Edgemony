@@ -36,14 +36,19 @@ function App() {
     localStorage.setItem("randomFacts", JSON.stringify(favFacts));
   }
 
-  console.log(JSON.parse(localStorage.getItem("randomFacts")));
-
   return (
     <>
-      <h1>Here is your random fact of the day: </h1>
-      <h2>{fact}</h2>
+      <h2>Here is your random fact of the day:</h2>
+      <h1>{fact}</h1>
       <button onClick={getRandomFact}>Generate another random fact</button>
       <button onClick={handleClick}>Save Fact</button>
+
+      <h3>Favorite Facts</h3>
+      <ul>
+        {favFacts.map((favFact, index) => (
+          <li key={index}>{favFact}</li>
+        ))}
+      </ul>
     </>
   );
 }

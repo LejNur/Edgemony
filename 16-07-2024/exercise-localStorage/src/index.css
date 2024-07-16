@@ -62,6 +62,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+ul {
+  margin-block: 3rem;
+  text-align: left;
+  width: 50%;
+}
+
+h3 {
+  margin-block: 2rem;
+  text-align: left;
+}
+
+ul li {
+  margin-block: 6px;
+  font-size: 14px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
