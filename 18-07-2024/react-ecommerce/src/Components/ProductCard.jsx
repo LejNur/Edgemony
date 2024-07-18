@@ -8,11 +8,9 @@ function ProductCard({ product }) {
     <div>
       <img
         onClick={() => setIsModalOpen(true)}
-        src={product.images.at(0)}
+        src={product.thumbnail}
         alt=""
       />
-      {/* <h2>{product.title}</h2>
-      <p>{product.description}</p> */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <p>{product.description}</p>
         <Link to={`/product/${product.id}`}>{product.title}</Link>

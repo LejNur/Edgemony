@@ -9,7 +9,9 @@ import Errorpage from "./Pages/Errorpage";
 import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("cart")) || []
+  );
 
   function addItem(product) {
     setCart((prevCart) => [...prevCart, product]);

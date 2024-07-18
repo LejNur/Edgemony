@@ -4,7 +4,7 @@ function Cart({ cart, onRemoveItem }) {
   return (
     <div>
       {cart.map((item) => (
-        <CartItem item={item} onRemoveItem={onRemoveItem} />
+        <CartItem key={item.id} item={item} onRemoveItem={onRemoveItem} />
       ))}
     </div>
   );
