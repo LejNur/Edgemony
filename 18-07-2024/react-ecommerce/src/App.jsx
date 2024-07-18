@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Navbar } from "./Components/Navbar";
@@ -11,10 +11,19 @@ import ProductDetails from "./Pages/ProductDetails";
 function App() {
   const [cart, setCart] = useState([]);
 
+  function addItem(product) {
+    setCart((prevCart) => [...prevCart, product]);
+  }
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   function removeItem(id) {
     const updatedCart = cart.filter((item) => item.id !== id);
     setCart(updatedCart);
   }
+
   return (
     <>
       <Navbar />
@@ -27,7 +36,7 @@ function App() {
         />
         <Route
           path="/product/:id"
-          element={<ProductDetails setCart={setCart} />}
+          element={<ProductDetails onAddItem={addItem} />}
         />
         <Route path="*" element={<Errorpage />} />
       </Routes>

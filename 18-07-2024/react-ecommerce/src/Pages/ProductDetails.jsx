@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-function ProductDetails({ setCart }) {
+function ProductDetails({ onAddItem }) {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -15,15 +15,11 @@ function ProductDetails({ setCart }) {
     getProduct();
   }, []);
 
-  function addToCart() {
-    setCart((prevCart) => [...prevCart, product]);
-  }
-
   return (
     <div>
       <p>This product has an id: {id}</p>
       <p>{product && product.title}</p>
-      <button onClick={addToCart}>Add to cart</button>
+      <button onClick={() => onAddItem(product)}>Add to cart</button>
     </div>
   );
 }
