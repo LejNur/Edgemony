@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header>
       <nav className="flex items-center justify-between py-2 px-4 bg-slate-300">
-        <ul className="flex">
+        <ul className="flex gap-3">
           <li>
             <Link to="/">Home</Link>
           </li>
