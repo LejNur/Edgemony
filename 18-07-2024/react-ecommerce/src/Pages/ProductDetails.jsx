@@ -17,6 +17,10 @@ function ProductDetails() {
     getProduct();
   }, []);
 
+  if (!product) {
+    return <div>Loading product ... </div>;
+  }
+
   return (
     <div className="w-1/2 flex flex-col gap-2 items-start py-8 px-6 text-slate-600">
       <p className="font-extralight">
@@ -30,7 +34,7 @@ function ProductDetails() {
       </span>
       <button
         className="border border-cyan-600 rounded-md py-2 px-4 hover:bg-cyan-600 hover:text-slate-200 transition ease-in-out"
-        onClick={() => addItem(product)}
+        onClick={() => addItem({ ...product, quantity: 1 })}
       >
         Add to cart
       </button>

@@ -5,7 +5,7 @@ import { CartContext } from "../Providers/CartContext";
 function Cart() {
   const { cart } = useContext(CartContext);
   return (
-    <div>
+    <div className="w-fit flex flex-wrap gap-6">
       {cart.map((item) => (
         <CartItem key={item.id} item={item} />
       ))}
