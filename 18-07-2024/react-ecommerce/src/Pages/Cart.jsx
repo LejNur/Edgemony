@@ -1,10 +1,13 @@
+import { useContext } from "react";
 import CartItem from "../Components/CartItem";
+import { CartContext } from "../Providers/CartContext";
 
-function Cart({ cart, onRemoveItem }) {
+function Cart() {
+  const { cart } = useContext(CartContext);
   return (
     <div>
       {cart.map((item) => (
-        <CartItem key={item.id} item={item} onRemoveItem={onRemoveItem} />
+        <CartItem key={item.id} item={item} />
       ))}
     </div>
   );
