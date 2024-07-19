@@ -15,7 +15,7 @@ function Homepage() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-slate-200 w-full mx-auto py-6 px-12 grid grid-cols-3 gap-y-14 justify-items-center">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
