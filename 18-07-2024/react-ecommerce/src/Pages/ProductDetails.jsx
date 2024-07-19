@@ -21,7 +21,6 @@ function ProductDetails() {
     return <div>Loading product ... </div>;
   }
 
-  console.log(product);
   const { images } = product;
   return (
     <div className="w-1/2 flex flex-col gap-2 items-start py-8 px-6 text-slate-600">
@@ -32,7 +31,7 @@ function ProductDetails() {
       {images.map((image) => (
         <img src={image} />
       ))}
-      {/* <img className="w-1/2" src={product.images[0]} alt="" /> */}
+
       <p>{product.description}</p>
       <span>
         rating: <span className="font-semibold">{product.rating}</span>
