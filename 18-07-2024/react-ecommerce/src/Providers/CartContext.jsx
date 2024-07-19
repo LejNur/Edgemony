@@ -18,8 +18,16 @@ function CartContextProvider({ children }) {
   }
 
   function removeItem(id) {
-    const filteredCart = cart.filter((item) => item.id !== id);
-    setCart(filteredCart);
+    const item = cart.find((item) => item.id === id);
+    if (item.quantity > 1) {
+      const updatedCart = cart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+      );
+      setCart(updatedCart);
+    } else {
+      const filteredCart = cart.filter((item) => item.id !== id);
+      setCart(filteredCart);
+    }
   }
 
   return (
