@@ -1,8 +1,8 @@
 import { labels } from "../../locales/staticText";
 import { useState, useEffect } from "react";
 import { getRecipeList } from "../../api/client";
-import { Link, useParams } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
+import Animation from "../Loading/Animation";
 
 function List() {
   const [recipeList, setRecipeList] = useState([]);
@@ -27,7 +27,8 @@ function List() {
     console.log(recipeList);
   }, [recipeList]);
 
-  if (isLoading) return <p>Recipe list is loading ...</p>;
+  // if (isLoading) return <p>Recipe list is loading ...</p>;
+  if (isLoading) return <Animation />;
 
   return (
     <div className="flex justify-center">
