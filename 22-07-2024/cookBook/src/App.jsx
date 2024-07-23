@@ -1,10 +1,17 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import List from "./Components/List/List";
+import Navbar from "./Components/Navbar/Navbar";
+import Homepage from "./pages/Homepage";
+import RecipeDetails from "./pages/RecipeDetails";
 
 function App() {
   return (
     <>
-      <List></List>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/recipe/:id" element={<RecipeDetails />}></Route>
+      </Routes>
     </>
   );
 }
