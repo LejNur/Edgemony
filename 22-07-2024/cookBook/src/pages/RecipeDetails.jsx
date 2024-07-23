@@ -2,17 +2,22 @@ import { useParams } from "react-router-dom";
 import { getRecipeDetails } from "../api/client";
 import { useEffect, useState } from "react";
 import Skeleton from "../Components/Loading/Skeleton";
+import Error from "../Components/Error/Error";
 
 function RecipeDetails() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState({ message: "", isError: false });
 
   async function getDetails() {
     try {
       const data = await getRecipeDetails(id);
       setRecipe(data);
     } catch (error) {
+      setIsError((prevState) => {
+        return { ...prevState, message: error.message, isError: true };
+      });
       console.log("Error", error);
     } finally {
       setIsLoading(false);
@@ -24,7 +29,7 @@ function RecipeDetails() {
   }, []);
   console.log(recipe);
 
-  // if (!recipe) return <p>pot moving...</p>;
+  if (isError.isError) return <Error message={isError.message} />;
 
   if (isLoading) return <Skeleton />;
 
@@ -47,11 +52,7 @@ function RecipeDetails() {
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
-            alt=""
-            src={recipe.image}
-            className="w-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-          />
+          <img alt="" src={recipe.image} className="w-full rounded-md" />
         </div>
       </div>
     </div>
@@ -59,3 +60,5 @@ function RecipeDetails() {
 }
 
 export default RecipeDetails;
+// className =
+//   "-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden";

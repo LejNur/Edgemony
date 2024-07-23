@@ -22,8 +22,9 @@ export function getRecipeList() {
 }
 
 export function getRecipeDetails() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
+      // reject({ message: "This is a error message!" });
       resolve(() => {
         return {
           id: "1",
