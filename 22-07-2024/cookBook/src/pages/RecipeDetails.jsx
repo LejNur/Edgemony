@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { getRecipeDetails } from "../api/client";
 import { useEffect, useState } from "react";
+import Skeleton from "../Components/Loading/Skeleton";
 
 function RecipeDetails() {
   const { id } = useParams();
@@ -13,6 +14,8 @@ function RecipeDetails() {
       setRecipe(data);
     } catch (error) {
       console.log("Error", error);
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -21,7 +24,9 @@ function RecipeDetails() {
   }, []);
   console.log(recipe);
 
-  if (!recipe) return <p>pot moving...</p>;
+  // if (!recipe) return <p>pot moving...</p>;
+
+  if (isLoading) return <Skeleton />;
 
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
