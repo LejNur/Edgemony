@@ -5,4 +5,6 @@ export const labels = {
   recipeCookTime: "Cook Time",
 
   recipeList: "My CookBook",
+
+  filterInput: "Search for a recipe title ... ",
 };

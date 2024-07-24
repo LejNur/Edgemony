@@ -27,7 +27,6 @@ function List() {
     console.log(recipeList);
   }, [recipeList]);
 
-  // if (isLoading) return <p>Recipe list is loading ...</p>;
   if (isLoading) return <Animation />;
 
   return (
