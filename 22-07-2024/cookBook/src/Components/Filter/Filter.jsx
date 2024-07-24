@@ -1,13 +1,15 @@
 import { labels } from "../../locales/staticText";
 
-function Filter() {
+function Filter({ filter, onChange }) {
   return (
     <div className="flex justify-center items-center my-10">
       <div className="relative w-96">
         <input
           type="text"
           id="Search"
+          value={filter}
           placeholder={`${labels.filterInput}`}
+          onChange={onChange}
           className="w-full rounded-md border-gray-200 p-2.5 pe-10 shadow-sm sm:text-sm"
         />
         <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
