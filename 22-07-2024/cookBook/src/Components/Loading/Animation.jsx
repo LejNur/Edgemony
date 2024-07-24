@@ -4,7 +4,6 @@ function Animation() {
       <img
         src="/loadingIcon.svg"
         alt=""
-        srcset=""
         className="animate-wiggle animate-infinite"
       />
     </div>

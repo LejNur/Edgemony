@@ -41,15 +41,13 @@ export function getRecipeDetails() {
   });
 }
 
-// with api
-/* export const getBookList = async () => {
-	try {
-
-		const res = await fetch("https://jsonplaceholde.typicode.com/users");
-		return res.json()
-
-	} catch (error) {
-		throw new Error("Error:", error)
-
-	}
-};  */
+export const addRecipe = (body) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        ...body,
+        id: self.crypto.randomUUID(),
+      });
+    }, 3000);
+  });
+};

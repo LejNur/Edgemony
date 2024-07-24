@@ -25,9 +25,9 @@ function List() {
     getRecipe();
   }, []);
 
-  useEffect(() => {
-    console.log(recipeList);
-  }, [recipeList]);
+  // useEffect(() => {
+  //   console.log(recipeList);
+  // }, [recipeList]);
 
   if (isLoading) return <Animation />;
 
