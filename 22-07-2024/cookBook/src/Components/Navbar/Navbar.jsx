@@ -7,7 +7,7 @@ function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
             <Link to="/">
-              <img src="/public/icon.svg"></img>
+              <img src="/icon.svg"></img>
             </Link>
           </div>
 
