@@ -7,11 +7,12 @@ import Filter from "../Filter/Filter";
 
 function List() {
   const [recipeList, setRecipeList] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [filter, setFilter] = useState("");
 
   async function getRecipe() {
     try {
+      setIsLoading(true);
       const data = await getRecipeList();
       setRecipeList(data);
     } catch (error) {
@@ -24,10 +25,6 @@ function List() {
   useEffect(() => {
     getRecipe();
   }, []);
-
-  // useEffect(() => {
-  //   console.log(recipeList);
-  // }, [recipeList]);
 
   if (isLoading) return <Animation />;
 
@@ -64,7 +61,7 @@ function List() {
               <tbody className="divide-y divide-gray-200">
                 {recipeList
                   .filter((recipe) =>
-                    recipe.title.toLowerCase().includes(filter.toLowerCase())
+                    recipe.name.toLowerCase().includes(filter.toLowerCase())
                   )
                   .map((recipe) => (
                     <Recipe key={recipe.id} recipe={recipe} />

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { getRecipeDetails } from "../api/client";
+// import { getRecipeDetails } from "../api/client";
 import { useEffect, useState } from "react";
 import Skeleton from "../Components/Loading/Skeleton";
 import Error from "../Components/Error/Error";
