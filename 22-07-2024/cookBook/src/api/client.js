@@ -48,6 +48,6 @@ export const addRecipe = (body) => {
         ...body,
         id: self.crypto.randomUUID(),
       });
-    }, 3000);
+    }, 1000);
   });
 };
