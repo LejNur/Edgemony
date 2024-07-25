@@ -24,27 +24,11 @@ export async function getRecipeDetails(id) {
   const res = await axios.get(`${BASE_URL}/${id}`);
   return res.data;
 }
-// export function getRecipeList() {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve(() => {
-//         return data;
-//       });
-//     }, 2000);
-//   });
-// }
 
-// export function getRecipeDetails(id) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       // reject({ message: "This is a error message!" });
-//       resolve(() => {
-//         return data.find((item) => item.id === id);
-//       });
-//     }, 2000);
-//   });
-// }
-
+export async function addRecipe(body) {
+  const res = await axios.post(BASE_URL, body);
+  return res.data;
+}
 // export const addRecipe = (body) => {
 //   return new Promise((resolve) => {
 //     setTimeout(() => {

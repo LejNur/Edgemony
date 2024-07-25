@@ -4,9 +4,9 @@ import Animation from "../Loading/Animation";
 
 function Form({ value, onSubmit }) {
   const initialState = {
-    title: value?.title || "",
+    name: value?.name || "",
     category: value?.category || "",
-    time: value?.time || "",
+    cooktime: value?.time || "",
     ingredients: value?.ingredients || "",
     instructions: value?.instructions || "",
     images: value?.images || "",
@@ -15,17 +15,17 @@ function Form({ value, onSubmit }) {
   const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState(initialState);
 
-  const titleValidation = !form.title.length;
+  const nameValidation = !form.name.length;
   const categoryValidation = !form.category.length;
-  const timeValidation = !form.time.length;
+  const cooktimeValidation = !form.cooktime.length;
   const ingredientsValidation = !form.ingredients.length;
   const instructionsValidation = !form.instructions.length;
   const imagesValidation = !form.images.length;
 
   const formValidation =
-    titleValidation ||
+    nameValidation ||
     categoryValidation ||
-    timeValidation ||
+    cooktimeValidation ||
     ingredientsValidation ||
     instructionsValidation ||
     imagesValidation;
@@ -62,7 +62,7 @@ function Form({ value, onSubmit }) {
             <div className="relative">
               <input
                 value={form.title}
-                name="title"
+                name="name"
                 type="text"
                 className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
@@ -89,7 +89,7 @@ function Form({ value, onSubmit }) {
             <div className="relative">
               <input
                 value={form.time}
-                name="time"
+                name="cooktime"
                 type="text"
                 className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}

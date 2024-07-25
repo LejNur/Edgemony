@@ -1,13 +1,17 @@
 import { useNavigate } from "react-router-dom";
-// import { addRecipe } from "../api/client";
+import { addRecipe } from "../api/client";
 import Form from "../Components/Form/Form";
 
 function AddRecipe() {
   const navigate = useNavigate();
 
   async function handleSubmit(formData) {
+    const newFormData = {
+      ...formData,
+      category: [formData.category],
+    };
     try {
-      const res = await addRecipe(formData);
+      const res = await addRecipe(newFormData);
       console.log(res);
       navigate("/");
     } catch (error) {
