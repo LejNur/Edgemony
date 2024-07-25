@@ -17,7 +17,11 @@ const BASE_URL = "http://localhost:5000/recipes";
 
 export async function getRecipeList() {
   const res = await axios.get(BASE_URL);
-  console.log(res.data);
+  return res.data;
+}
+
+export async function getRecipeDetails(id) {
+  const res = await axios.get(`${BASE_URL}/${id}`);
   return res.data;
 }
 // export function getRecipeList() {

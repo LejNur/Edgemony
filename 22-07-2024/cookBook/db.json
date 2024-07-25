@@ -1,0 +1,1323 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 large eggs",
+        "50g Parmesan cheese",
+        "2 cloves garlic",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook spaghetti according to package instructions.",
+        "Fry pancetta with garlic until crispy.",
+        "Beat eggs and mix with Parmesan cheese.",
+        "Combine cooked spaghetti with pancetta and garlic.",
+        "Remove from heat and stir in egg mixture.",
+        "Season with salt and pepper and serve immediately."
+      ],
+      "category": ["Pasta", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/5710181/pexels-photo-5710181.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/5710181/pexels-photo-5710181.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/5710181/pexels-photo-5710181.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/5710181/pexels-photo-5710181.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 2,
+      "name": "Chicken Alfredo",
+      "ingredients": [
+        "300g fettuccine",
+        "2 chicken breasts",
+        "100g butter",
+        "100g Parmesan cheese",
+        "2 cloves garlic",
+        "1 cup heavy cream",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook fettuccine according to package instructions.",
+        "Cook chicken breasts in a skillet until fully cooked, then slice thinly.",
+        "In a separate pan, melt butter and add garlic.",
+        "Stir in heavy cream and Parmesan cheese until smooth.",
+        "Combine fettuccine, chicken, and Alfredo sauce.",
+        "Season with salt and pepper and serve."
+      ],
+      "category": ["Pasta", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "25 minutes"
+    },
+    {
+      "id": 3,
+      "name": "Beef Tacos",
+      "ingredients": [
+        "500g ground beef",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 packet taco seasoning",
+        "8 taco shells",
+        "Lettuce, shredded",
+        "Tomato, diced",
+        "Cheese, shredded"
+      ],
+      "instructions": [
+        "Brown ground beef with onion and garlic in a skillet.",
+        "Drain excess fat and add taco seasoning.",
+        "Fill taco shells with seasoned beef.",
+        "Top with lettuce, tomato, and cheese."
+      ],
+      "category": ["Mexican", "Main Course", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "ingredients": [
+        "1 head Romaine lettuce",
+        "1 cup croutons",
+        "1/2 cup Parmesan cheese",
+        "1/4 cup Caesar dressing",
+        "1 clove garlic, minced"
+      ],
+      "instructions": [
+        "Chop Romaine lettuce and place in a bowl.",
+        "Add croutons, Parmesan cheese, and garlic.",
+        "Toss with Caesar dressing and serve."
+      ],
+      "category": ["Salad", "American", "Appetizer"],
+      "images": {
+        "large": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "10 minutes"
+    },
+    {
+      "id": 5,
+      "name": "Vegetable Stir-Fry",
+      "ingredients": [
+        "1 cup broccoli florets",
+        "1 bell pepper, sliced",
+        "1 carrot, sliced",
+        "1 zucchini, sliced",
+        "2 tbsp soy sauce",
+        "1 tbsp olive oil",
+        "2 cloves garlic, minced"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan and add garlic.",
+        "Add vegetables and stir-fry until tender.",
+        "Stir in soy sauce and cook for an additional 2 minutes.",
+        "Serve hot."
+      ],
+      "category": ["Vegetarian", "Asian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 6,
+      "name": "Margherita Pizza",
+      "ingredients": [
+        "1 pizza dough",
+        "200g tomato sauce",
+        "200g mozzarella cheese",
+        "Fresh basil leaves",
+        "1 tbsp olive oil"
+      ],
+      "instructions": [
+        "Preheat oven to 220°C (425°F).",
+        "Spread tomato sauce over pizza dough.",
+        "Top with mozzarella cheese.",
+        "Bake for 15-20 minutes or until crust is golden.",
+        "Garnish with fresh basil and a drizzle of olive oil."
+      ],
+      "category": ["Pizza", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/18431672/pexels-photo-18431672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/18431672/pexels-photo-18431672.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/18431672/pexels-photo-18431672.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/18431672/pexels-photo-18431672.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 7,
+      "name": "Blueberry Pancakes",
+      "ingredients": [
+        "1 cup flour",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1/4 tsp salt",
+        "1 cup buttermilk",
+        "1 egg",
+        "2 tbsp melted butter",
+        "1 cup blueberries"
+      ],
+      "instructions": [
+        "Mix flour, sugar, baking powder, baking soda, and salt in a bowl.",
+        "In another bowl, whisk buttermilk, egg, and melted butter.",
+        "Combine wet and dry ingredients, then fold in blueberries.",
+        "Cook pancakes on a hot griddle until bubbles form on the surface, then flip and cook until golden brown."
+      ],
+      "category": ["Breakfast", "American", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/3727143/pexels-photo-3727143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/3727143/pexels-photo-3727143.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/3727143/pexels-photo-3727143.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/3727143/pexels-photo-3727143.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 8,
+      "name": "Greek Salad",
+      "ingredients": [
+        "1 cucumber, chopped",
+        "2 tomatoes, chopped",
+        "1 red onion, sliced",
+        "1 green bell pepper, chopped",
+        "1/2 cup Kalamata olives",
+        "1/2 cup feta cheese, crumbled",
+        "2 tbsp olive oil",
+        "1 tbsp red wine vinegar",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Combine cucumber, tomatoes, red onion, bell pepper, and olives in a bowl.",
+        "Add feta cheese.",
+        "Toss with olive oil, red wine vinegar, salt, and pepper."
+      ],
+      "category": ["Salad", "Greek", "Appetizer"],
+      "images": {
+        "large": "https://images.pexels.com/photos/4061528/pexels-photo-4061528.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/4061528/pexels-photo-4061528.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/4061528/pexels-photo-4061528.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/4061528/pexels-photo-4061528.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 9,
+      "name": "Lemon Garlic Shrimp",
+      "ingredients": [
+        "500g shrimp, peeled and deveined",
+        "3 cloves garlic, minced",
+        "1 lemon, juiced",
+        "2 tbsp olive oil",
+        "Salt and black pepper to taste",
+        "1 tbsp parsley, chopped"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan and add garlic.",
+        "Add shrimp and cook until pink and opaque.",
+        "Stir in lemon juice and season with salt and pepper.",
+        "Garnish with parsley and serve."
+      ],
+      "category": ["Seafood", "Mediterranean", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/2670417/pexels-photo-2670417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/2670417/pexels-photo-2670417.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/2670417/pexels-photo-2670417.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/2670417/pexels-photo-2670417.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "10 minutes"
+    },
+    {
+      "id": 10,
+      "name": "Chocolate Cake",
+      "ingredients": [
+        "1 3/4 cups flour",
+        "2 cups sugar",
+        "3/4 cup cocoa powder",
+        "1 1/2 tsp baking powder",
+        "1 1/2 tsp baking soda",
+        "1 tsp salt",
+        "2 eggs",
+        "1 cup milk",
+        "1/2 cup vegetable oil",
+        "2 tsp vanilla extract",
+        "1 cup boiling water"
+      ],
+      "instructions": [
+        "Preheat oven to 175°C (350°F).",
+        "Grease and flour two 9-inch round baking pans.",
+        "In a large bowl, combine dry ingredients.",
+        "Add eggs, milk, oil, and vanilla; beat on medium speed for 2 minutes.",
+        "Stir in boiling water (batter will be thin).",
+        "Pour batter into prepared pans.",
+        "Bake for 30-35 minutes or until a toothpick inserted in the center comes out clean.",
+        "Cool in pans for 10 minutes; remove to wire racks to cool completely."
+      ],
+      "category": ["Dessert", "Baking", "Chocolate"],
+      "images": {
+        "large": "https://images.pexels.com/photos/1109847/pexels-photo-1109847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/1109847/pexels-photo-1109847.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/1109847/pexels-photo-1109847.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/1109847/pexels-photo-1109847.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "45 minutes"
+    },
+
+    {
+      "id": 11,
+      "name": "Lasagna",
+      "ingredients": [
+        "12 lasagna noodles",
+        "500g ground beef",
+        "1 onion, chopped",
+        "2 cups marinara sauce",
+        "2 cups ricotta cheese",
+        "2 cups mozzarella cheese",
+        "1/2 cup Parmesan cheese",
+        "1 egg",
+        "1 tsp dried basil",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook lasagna noodles according to package instructions.",
+        "Brown ground beef with onion in a skillet.",
+        "Mix ricotta cheese with egg and basil.",
+        "Layer noodles, meat sauce, and cheese mixture in a baking dish.",
+        "Top with mozzarella and Parmesan cheese.",
+        "Bake at 180°C (350°F) for 45 minutes."
+      ],
+      "category": ["Pasta", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/2765875/pexels-photo-2765875.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/2765875/pexels-photo-2765875.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/2765875/pexels-photo-2765875.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/2765875/pexels-photo-2765875.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "1 hour"
+    },
+    {
+      "id": 12,
+      "name": "Shrimp Scampi",
+      "ingredients": [
+        "500g shrimp, peeled and deveined",
+        "4 cloves garlic, minced",
+        "1/4 cup butter",
+        "1/4 cup olive oil",
+        "1/4 cup lemon juice",
+        "1/4 cup chopped parsley",
+        "Salt and black pepper to taste",
+        "1/2 tsp red pepper flakes"
+      ],
+      "instructions": [
+        "Heat butter and olive oil in a pan.",
+        "Add garlic and cook for 1 minute.",
+        "Add shrimp and cook until pink.",
+        "Stir in lemon juice, parsley, and red pepper flakes.",
+        "Season with salt and pepper."
+      ],
+      "category": ["Seafood", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/8697539/pexels-photo-8697539.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/8697539/pexels-photo-8697539.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/8697539/pexels-photo-8697539.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/8697539/pexels-photo-8697539.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 13,
+      "name": "Apple Pie",
+      "ingredients": [
+        "2 1/2 cups all-purpose flour",
+        "1 cup butter",
+        "1/4 cup sugar",
+        "6 cups thinly sliced apples",
+        "3/4 cup sugar",
+        "1/4 cup flour",
+        "1 tsp cinnamon",
+        "1/4 tsp nutmeg",
+        "1 egg, beaten"
+      ],
+      "instructions": [
+        "Preheat oven to 220°C (425°F).",
+        "Mix flour and butter to form a crumbly dough.",
+        "Press dough into pie dish and fill with apple mixture.",
+        "Cover with additional dough and crimp edges.",
+        "Brush with beaten egg.",
+        "Bake for 45-50 minutes."
+      ],
+      "category": ["Dessert", "Baking", "Pie"],
+      "images": {
+        "large": "https://images.pexels.com/photos/1282279/pexels-photo-1282279.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/1282279/pexels-photo-1282279.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/1282279/pexels-photo-1282279.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/1282279/pexels-photo-1282279.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "1 hour"
+    },
+    {
+      "id": 14,
+      "name": "Pancakes",
+      "ingredients": [
+        "1 cup flour",
+        "2 tbsp sugar",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1 cup milk",
+        "1 egg",
+        "2 tbsp melted butter",
+        "Maple syrup for serving"
+      ],
+      "instructions": [
+        "Mix flour, sugar, baking powder, and salt in a bowl.",
+        "Whisk in milk, egg, and melted butter.",
+        "Pour batter onto a heated griddle and cook until bubbles form.",
+        "Flip and cook until golden brown."
+      ],
+      "category": ["Breakfast", "Baking", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 15,
+      "name": "Quiche Lorraine",
+      "ingredients": [
+        "1 pie crust",
+        "200g bacon, cooked and crumbled",
+        "1 cup shredded Swiss cheese",
+        "4 large eggs",
+        "1 cup heavy cream",
+        "1/2 cup milk",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 190°C (375°F).",
+        "Place pie crust in a pie dish.",
+        "Spread bacon and cheese over crust.",
+        "Whisk together eggs, cream, and milk.",
+        "Pour over bacon and cheese.",
+        "Bake for 35-40 minutes."
+      ],
+      "category": ["Breakfast", "Baking", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/6072220/pexels-photo-6072220.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/6072220/pexels-photo-6072220.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/6072220/pexels-photo-6072220.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/6072220/pexels-photo-6072220.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "45 minutes"
+    },
+    {
+      "id": 16,
+      "name": "BBQ Ribs",
+      "ingredients": [
+        "1 rack of ribs",
+        "1 cup BBQ sauce",
+        "1 tbsp paprika",
+        "1 tbsp garlic powder",
+        "1 tbsp onion powder",
+        "1 tsp black pepper",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Preheat oven to 150°C (300°F).",
+        "Mix paprika, garlic powder, onion powder, pepper, and salt.",
+        "Rub spice mixture onto ribs.",
+        "Wrap ribs in foil and bake for 2.5 hours.",
+        "Unwrap, brush with BBQ sauce, and bake for an additional 30 minutes."
+      ],
+      "category": ["Main Course", "Grill", "American"],
+      "images": {
+        "large": "https://images.pexels.com/photos/10635360/pexels-photo-10635360.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/10635360/pexels-photo-10635360.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/10635360/pexels-photo-10635360.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/10635360/pexels-photo-10635360.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "3 hours"
+    },
+    {
+      "id": 17,
+      "name": "Vegetarian Stir-Fry",
+      "ingredients": [
+        "2 cups broccoli florets",
+        "1 bell pepper, sliced",
+        "1 carrot, sliced",
+        "1 zucchini, sliced",
+        "1 cup snap peas",
+        "3 cloves garlic, minced",
+        "2 tbsp soy sauce",
+        "1 tbsp sesame oil",
+        "1 tbsp olive oil",
+        "1 tsp ginger, minced"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan.",
+        "Add garlic and ginger, cook for 1 minute.",
+        "Add vegetables and stir-fry until tender.",
+        "Stir in soy sauce and sesame oil."
+      ],
+      "category": ["Vegetarian", "Main Course", "Asian"],
+      "images": {
+        "large": "https://images.pexels.com/photos/4397870/pexels-photo-4397870.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/4397870/pexels-photo-4397870.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/4397870/pexels-photo-4397870.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/4397870/pexels-photo-4397870.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 18,
+      "name": "Chocolate Chip Cookies",
+      "ingredients": [
+        "2 1/4 cups all-purpose flour",
+        "1/2 tsp baking soda",
+        "1 cup unsalted butter, room temperature",
+        "1/2 cup granulated sugar",
+        "1 cup packed light-brown sugar",
+        "1 tsp salt",
+        "2 tsp vanilla extract",
+        "2 large eggs",
+        "2 cups semisweet and/or milk chocolate chips"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Whisk together flour and baking soda.",
+        "Mix butter, sugars, and salt until smooth.",
+        "Add vanilla and eggs, one at a time.",
+        "Add flour mixture and chocolate chips.",
+        "Drop dough onto baking sheets and bake for 10-12 minutes."
+      ],
+      "category": ["Dessert", "Baking", "Cookies"],
+      "images": {
+        "large": "https://images.pexels.com/photos/10287034/pexels-photo-10287034.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/10287034/pexels-photo-10287034.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/10287034/pexels-photo-10287034.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/10287034/pexels-photo-10287034.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "12 minutes"
+    },
+    {
+      "id": 19,
+      "name": "Guacamole",
+      "ingredients": [
+        "3 avocados, peeled and pitted",
+        "1 lime, juiced",
+        "1 tsp salt",
+        "1/2 cup diced onion",
+        "3 tbsp chopped cilantro",
+        "2 roma tomatoes, diced",
+        "1 tsp minced garlic",
+        "1 pinch ground cayenne pepper"
+      ],
+      "instructions": [
+        "Mash avocados in a bowl.",
+        "Mix in lime juice and salt.",
+        "Stir in onion, cilantro, tomatoes, and garlic.",
+        "Add cayenne pepper and mix well."
+      ],
+      "category": ["Appetizer", "Dip", "Mexican"],
+      "images": {
+        "large": "https://images.pexels.com/photos/1552458/pexels-photo-1552458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/1552458/pexels-photo-1552458.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/1552458/pexels-photo-1552458.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/1552458/pexels-photo-1552458.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "10 minutes"
+    },
+    {
+      "id": 20,
+      "name": "Caesar Salad",
+      "ingredients": [
+        "1 head romaine lettuce, chopped",
+        "1/2 cup grated Parmesan cheese",
+        "1 cup croutons",
+        "1/4 cup Caesar dressing",
+        "1/2 lemon, juiced",
+        "1 clove garlic, minced",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Mix lettuce, Parmesan, and croutons in a bowl.",
+        "Whisk dressing, lemon juice, and garlic.",
+        "Toss salad with dressing.",
+        "Season with salt and pepper."
+      ],
+      "category": ["Salad", "Appetizer", "Italian"],
+      "images": {
+        "large": "https://images.pexels.com/photos/8449230/pexels-photo-8449230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/8449230/pexels-photo-8449230.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/8449230/pexels-photo-8449230.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/8449230/pexels-photo-8449230.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 21,
+      "name": "Baked Ziti",
+      "ingredients": [
+        "300g ziti pasta",
+        "500g marinara sauce",
+        "1 cup ricotta cheese",
+        "1 cup shredded mozzarella cheese",
+        "1/2 cup grated Parmesan cheese",
+        "1 egg",
+        "2 cloves garlic, minced",
+        "1 tbsp dried oregano"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Cook ziti according to package instructions.",
+        "Mix ricotta cheese, egg, garlic, and oregano.",
+        "Combine ziti with marinara sauce and cheese mixture.",
+        "Pour into a baking dish and top with mozzarella and Parmesan.",
+        "Bake for 30 minutes."
+      ],
+      "category": ["Pasta", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24245226/pexels-photo-24245226.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24245226/pexels-photo-24245226.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24245226/pexels-photo-24245226.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24245226/pexels-photo-24245226.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30 minutes"
+    },
+    {
+      "id": 22,
+      "name": "Lemon Bars",
+      "ingredients": [
+        "1 3/4 cups flour",
+        "1/2 cup butter",
+        "1/2 cup sugar",
+        "1 cup sugar",
+        "2 tbsp flour",
+        "1/2 cup lemon juice",
+        "2 large eggs",
+        "Powdered sugar for dusting"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Mix flour and butter and press into a baking pan.",
+        "Bake crust for 20 minutes.",
+        "Mix sugar, flour, lemon juice, and eggs.",
+        "Pour over crust and bake for an additional 25 minutes.",
+        "Dust with powdered sugar once cooled."
+      ],
+      "category": ["Dessert", "Baking", "Citrus"],
+      "images": {
+        "large": "https://images.pexels.com/photos/7771044/pexels-photo-7771044.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/7771044/pexels-photo-7771044.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/7771044/pexels-photo-7771044.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/7771044/pexels-photo-7771044.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "45 minutes"
+    },
+    {
+      "id": 23,
+      "name": "Butternut Squash Soup",
+      "ingredients": [
+        "1 butternut squash, peeled and cubed",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "4 cups vegetable broth",
+        "1/2 cup cream",
+        "1 tbsp olive oil",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in a pot and cook onion and garlic until soft.",
+        "Add butternut squash and vegetable broth.",
+        "Simmer until squash is tender.",
+        "Blend soup until smooth and stir in cream.",
+        "Season with salt and pepper."
+      ],
+      "category": ["Soup", "Vegetarian", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/5605560/pexels-photo-5605560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/5605560/pexels-photo-5605560.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/5605560/pexels-photo-5605560.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/5605560/pexels-photo-5605560.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "45 minutes"
+    },
+    {
+      "id": 24,
+      "name": "Mushroom Risotto",
+      "ingredients": [
+        "1 cup Arborio rice",
+        "200g mushrooms, sliced",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1/2 cup white wine",
+        "4 cups chicken or vegetable broth",
+        "1/2 cup Parmesan cheese",
+        "2 tbsp olive oil",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan and cook onion and garlic.",
+        "Add mushrooms and cook until soft.",
+        "Stir in Arborio rice and cook for 2 minutes.",
+        "Add white wine and cook until absorbed.",
+        "Gradually add broth, stirring constantly, until rice is cooked.",
+        "Stir in Parmesan cheese and season with salt and pepper."
+      ],
+      "category": ["Pasta", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30 minutes"
+    },
+    {
+      "id": 25,
+      "name": "Crispy Chicken Wings",
+      "ingredients": [
+        "1 kg chicken wings",
+        "1 cup flour",
+        "1 tsp paprika",
+        "1 tsp garlic powder",
+        "1 tsp onion powder",
+        "1/2 tsp salt",
+        "1/2 tsp black pepper",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Preheat oil in a deep fryer or large pot.",
+        "Mix flour, paprika, garlic powder, onion powder, salt, and pepper.",
+        "Coat chicken wings in flour mixture.",
+        "Fry wings until golden and crispy.",
+        "Drain on paper towels."
+      ],
+      "category": ["Appetizer", "American", "Snack"],
+      "images": {
+        "large": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 26,
+      "name": "Pumpkin Pie",
+      "ingredients": [
+        "1 pie crust",
+        "1 can (15 oz) pumpkin puree",
+        "3/4 cup brown sugar",
+        "1/2 tsp salt",
+        "1 tsp ground cinnamon",
+        "1/2 tsp ground ginger",
+        "1/4 tsp ground cloves",
+        "3 large eggs",
+        "1 cup heavy cream"
+      ],
+      "instructions": [
+        "Preheat oven to 220°C (425°F).",
+        "Mix pumpkin, brown sugar, salt, cinnamon, ginger, and cloves.",
+        "Beat in eggs and cream.",
+        "Pour filling into pie crust.",
+        "Bake for 15 minutes, then reduce temperature to 180°C (350°F) and bake for an additional 45 minutes."
+      ],
+      "category": ["Dessert", "Baking", "Pie"],
+      "images": {
+        "large": "https://images.pexels.com/photos/248469/pexels-photo-248469.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/248469/pexels-photo-248469.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/248469/pexels-photo-248469.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/248469/pexels-photo-248469.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "1 hour"
+    },
+    {
+      "id": 27,
+      "name": "Stuffed Bell Peppers",
+      "ingredients": [
+        "4 bell peppers",
+        "300g ground beef",
+        "1 cup cooked rice",
+        "1 onion, chopped",
+        "1 cup tomato sauce",
+        "1 cup shredded cheese",
+        "1 tsp dried oregano",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Cut tops off bell peppers and remove seeds.",
+        "Cook ground beef and onion until browned.",
+        "Mix with cooked rice, tomato sauce, and oregano.",
+        "Stuff peppers with mixture and top with cheese.",
+        "Bake for 30 minutes."
+      ],
+      "category": ["Main Course", "Comfort Food", "American"],
+      "images": {
+        "large": "https://images.pexels.com/photos/3569699/pexels-photo-3569699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/3569699/pexels-photo-3569699.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/3569699/pexels-photo-3569699.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/3569699/pexels-photo-3569699.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30 minutes"
+    },
+    {
+      "id": 28,
+      "name": "Coconut Rice",
+      "ingredients": [
+        "1 cup jasmine rice",
+        "1 cup coconut milk",
+        "1 cup water",
+        "1/2 tsp salt"
+      ],
+      "instructions": [
+        "Combine rice, coconut milk, water, and salt in a pot.",
+        "Bring to a boil, then reduce heat to low.",
+        "Cover and simmer for 18-20 minutes.",
+        "Let sit for 5 minutes before fluffing with a fork."
+      ],
+      "category": ["Side Dish", "Asian", "Vegetarian"],
+      "images": {
+        "large": "https://images.pexels.com/photos/4913521/pexels-photo-4913521.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/4913521/pexels-photo-4913521.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/4913521/pexels-photo-4913521.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/4913521/pexels-photo-4913521.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 29,
+      "name": "Garlic Mashed Potatoes",
+      "ingredients": [
+        "4 large potatoes, peeled and cubed",
+        "4 cloves garlic, minced",
+        "1/2 cup butter",
+        "1/2 cup milk",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Boil potatoes until tender.",
+        "Drain and return to pot.",
+        "Add garlic, butter, and milk.",
+        "Mash until smooth and creamy.",
+        "Season with salt and pepper."
+      ],
+      "category": ["Side Dish", "Comfort Food", "American"],
+      "images": {
+        "large": "https://images.pexels.com/photos/23940629/pexels-photo-23940629.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/23940629/pexels-photo-23940629.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/23940629/pexels-photo-23940629.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/23940629/pexels-photo-23940629.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "25 minutes"
+    },
+    {
+      "id": 30,
+      "name": "Mango Salsa",
+      "ingredients": [
+        "2 ripe mangoes, diced",
+        "1 red bell pepper, diced",
+        "1/2 red onion, diced",
+        "1 jalapeño, seeded and minced",
+        "2 tbsp lime juice",
+        "1/4 cup chopped cilantro",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "Combine mangoes, bell pepper, onion, and jalapeño in a bowl.",
+        "Stir in lime juice and cilantro.",
+        "Season with salt and mix well."
+      ],
+      "category": ["Appetizer", "Side Dish", "Mexican"],
+      "images": {
+        "large": "https://images.pexels.com/photos/4105288/pexels-photo-4105288.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/4105288/pexels-photo-4105288.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/4105288/pexels-photo-4105288.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/4105288/pexels-photo-4105288.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "10 minutes"
+    },
+    {
+      "id": 31,
+      "name": "Eggplant Parmesan",
+      "ingredients": [
+        "2 eggplants, sliced",
+        "2 cups marinara sauce",
+        "1 cup flour",
+        "2 eggs, beaten",
+        "2 cups breadcrumbs",
+        "1 cup shredded mozzarella cheese",
+        "1/2 cup grated Parmesan cheese",
+        "Olive oil for frying"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Dredge eggplant slices in flour, then dip in egg, and coat with breadcrumbs.",
+        "Fry eggplant slices in olive oil until golden.",
+        "Layer eggplant in a baking dish with marinara sauce and cheeses.",
+        "Bake for 30 minutes."
+      ],
+      "category": ["Italian", "Vegetarian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/19295802/pexels-photo-19295802.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/19295802/pexels-photo-19295802.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/19295802/pexels-photo-19295802.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/19295802/pexels-photo-19295802.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30 minutes"
+    },
+    {
+      "id": 32,
+      "name": "Clam Chowder",
+      "ingredients": [
+        "4 slices bacon, chopped",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "2 cups clams, chopped",
+        "2 cups potatoes, diced",
+        "2 cups clam juice",
+        "1 cup heavy cream",
+        "1 tbsp flour",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook bacon in a pot until crispy.",
+        "Remove bacon and cook onion and garlic in the same pot.",
+        "Add clams, potatoes, and clam juice.",
+        "Simmer until potatoes are tender.",
+        "Stir in heavy cream and flour.",
+        "Season with salt and pepper."
+      ],
+      "category": ["Soup", "Seafood", "American"],
+      "images": {
+        "large": "https://images.pexels.com/photos/6825467/pexels-photo-6825467.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/6825467/pexels-photo-6825467.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/6825467/pexels-photo-6825467.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/6825467/pexels-photo-6825467.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30 minutes"
+    },
+    {
+      "id": 33,
+      "name": "Chili Con Carne",
+      "ingredients": [
+        "500g ground beef",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 can (400g) diced tomatoes",
+        "1 can (400g) kidney beans, drained",
+        "1 can (400g) black beans, drained",
+        "2 tbsp chili powder",
+        "1 tsp cumin",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook ground beef with onion and garlic until browned.",
+        "Add tomatoes, beans, chili powder, and cumin.",
+        "Simmer for 30 minutes.",
+        "Season with salt and pepper."
+      ],
+      "category": ["Main Course", "Comfort Food", "Mexican"],
+      "images": {
+        "large": "https://images.pexels.com/photos/6358926/pexels-photo-6358926.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/6358926/pexels-photo-6358926.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/6358926/pexels-photo-6358926.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/6358926/pexels-photo-6358926.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30 minutes"
+    },
+    {
+      "id": 34,
+      "name": "Balsamic Glazed Salmon",
+      "ingredients": [
+        "4 salmon fillets",
+        "1/4 cup balsamic vinegar",
+        "2 tbsp honey",
+        "2 cloves garlic, minced",
+        "1 tbsp olive oil",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Mix balsamic vinegar, honey, and garlic.",
+        "Season salmon with salt and pepper.",
+        "Place salmon on a baking sheet and brush with glaze.",
+        "Bake for 15-20 minutes."
+      ],
+      "category": ["Seafood", "Main Course", "American"],
+      "images": {
+        "large": "https://images.pexels.com/photos/10067943/pexels-photo-10067943.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/10067943/pexels-photo-10067943.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/10067943/pexels-photo-10067943.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/10067943/pexels-photo-10067943.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 35,
+      "name": "Spinach Artichoke Dip",
+      "ingredients": [
+        "1 cup spinach, chopped",
+        "1 cup artichoke hearts, chopped",
+        "1/2 cup mayonnaise",
+        "1/2 cup sour cream",
+        "1 cup shredded Parmesan cheese",
+        "1/2 cup shredded mozzarella cheese",
+        "1 clove garlic, minced"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Mix spinach, artichokes, mayonnaise, sour cream, Parmesan, mozzarella, and garlic.",
+        "Transfer to a baking dish and bake for 20 minutes."
+      ],
+      "category": ["Appetizer", "Vegetarian", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/1543925/pexels-photo-1543925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/1543925/pexels-photo-1543925.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/1543925/pexels-photo-1543925.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/1543925/pexels-photo-1543925.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 36,
+      "name": "Chicken Fajitas",
+      "ingredients": [
+        "500g chicken breast, sliced",
+        "1 bell pepper, sliced",
+        "1 onion, sliced",
+        "2 tbsp fajita seasoning",
+        "2 tbsp olive oil",
+        "Tortillas",
+        "Sour cream and salsa for serving"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan and cook chicken until browned.",
+        "Add bell pepper and onion and cook until tender.",
+        "Stir in fajita seasoning.",
+        "Serve with tortillas, sour cream, and salsa."
+      ],
+      "category": ["Mexican", "Main Course", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 37,
+      "name": "Vegetable Stir-Fry",
+      "ingredients": [
+        "2 cups mixed vegetables (carrots, bell peppers, broccoli)",
+        "2 tbsp soy sauce",
+        "1 tbsp sesame oil",
+        "2 cloves garlic, minced",
+        "1 tbsp ginger, minced",
+        "1 tbsp cornstarch (optional, for thickening)"
+      ],
+      "instructions": [
+        "Heat sesame oil in a pan.",
+        "Add garlic and ginger, cook until fragrant.",
+        "Add vegetables and stir-fry until tender.",
+        "Add soy sauce and cook for a few more minutes.",
+        "Thicken with cornstarch if desired."
+      ],
+      "category": ["Vegetarian", "Asian", "Side Dish"],
+      "images": {
+        "large": "https://images.pexels.com/photos/3861485/pexels-photo-3861485.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/3861485/pexels-photo-3861485.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/3861485/pexels-photo-3861485.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/3861485/pexels-photo-3861485.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+
+    {
+      "id": 38,
+      "name": "Greek Salad",
+      "ingredients": [
+        "2 cups cherry tomatoes, halved",
+        "1 cucumber, sliced",
+        "1/2 red onion, sliced",
+        "1/2 cup Kalamata olives",
+        "1/2 cup feta cheese, crumbled",
+        "2 tbsp olive oil",
+        "1 tbsp red wine vinegar",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Combine all vegetables and olives in a bowl.",
+        "Drizzle with olive oil and red wine vinegar.",
+        "Toss to combine and season with salt and pepper."
+      ],
+      "category": ["Salad", "Mediterranean", "Side Dish"],
+      "images": {
+        "large": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "10 minutes"
+    },
+    {
+      "id": 39,
+      "name": "Garlic Butter Shrimp",
+      "ingredients": [
+        "500g shrimp, peeled and deveined",
+        "4 cloves garlic, minced",
+        "1/4 cup butter",
+        "1 tbsp olive oil",
+        "Salt and black pepper to taste",
+        "Chopped parsley for garnish"
+      ],
+      "instructions": [
+        "Heat olive oil and butter in a pan.",
+        "Add garlic and cook until fragrant.",
+        "Add shrimp and cook until pink.",
+        "Season with salt and pepper.",
+        "Garnish with parsley."
+      ],
+      "category": ["Seafood", "Main Course", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/5595438/pexels-photo-5595438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/5595438/pexels-photo-5595438.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/5595438/pexels-photo-5595438.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/5595438/pexels-photo-5595438.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "10 minutes"
+    },
+    {
+      "id": 40,
+      "name": "Carrot Cake",
+      "ingredients": [
+        "1 1/2 cups flour",
+        "1 cup sugar",
+        "1 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1/2 tsp salt",
+        "1 tsp cinnamon",
+        "1/2 tsp nutmeg",
+        "1/2 cup vegetable oil",
+        "2 large eggs",
+        "1 1/2 cups grated carrots",
+        "1/2 cup chopped walnuts"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Mix flour, sugar, baking powder, baking soda, salt, cinnamon, and nutmeg.",
+        "Add oil, eggs, carrots, and walnuts. Mix until well combined.",
+        "Pour batter into a greased pan and bake for 30-35 minutes."
+      ],
+      "category": ["Dessert", "Baking", "Cake"],
+      "images": {
+        "large": "https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "30-35 minutes"
+    },
+    {
+      "id": 41,
+      "name": "Chicken Alfredo",
+      "ingredients": [
+        "500g chicken breast, sliced",
+        "200g fettuccine pasta",
+        "1 cup heavy cream",
+        "1/2 cup Parmesan cheese",
+        "2 tbsp butter",
+        "2 cloves garlic, minced",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Cook fettuccine according to package instructions.",
+        "In a pan, cook chicken until browned.",
+        "Add garlic and cook for another minute.",
+        "Stir in heavy cream and butter.",
+        "Add Parmesan cheese and cook until sauce thickens.",
+        "Toss with pasta and season with salt and pepper."
+      ],
+      "category": ["Pasta", "Italian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 42,
+      "name": "Fruit Smoothie",
+      "ingredients": [
+        "1 cup frozen berries",
+        "1 banana",
+        "1 cup yogurt",
+        "1/2 cup orange juice",
+        "1 tbsp honey"
+      ],
+      "instructions": [
+        "Combine all ingredients in a blender.",
+        "Blend until smooth.",
+        "Pour into glasses and serve."
+      ],
+      "category": ["Breakfast", "Smoothie", "Healthy"],
+      "images": {
+        "large": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "5 minutes"
+    },
+    {
+      "id": 43,
+      "name": "Crispy Tofu",
+      "ingredients": [
+        "1 block firm tofu, drained and cubed",
+        "1/2 cup cornstarch",
+        "1/4 cup soy sauce",
+        "1/4 cup vegetable oil",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Toss tofu cubes with cornstarch.",
+        "Heat oil in a pan and fry tofu until crispy.",
+        "Season with soy sauce, salt, and pepper."
+      ],
+      "category": ["Vegetarian", "Asian", "Appetizer"],
+      "images": {
+        "large": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 44,
+      "name": "Vegetable Stir-Fry",
+      "ingredients": [
+        "1 cup broccoli florets",
+        "1 cup bell peppers, sliced",
+        "1 cup snap peas",
+        "2 cloves garlic, minced",
+        "2 tbsp soy sauce",
+        "1 tbsp olive oil",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan and add garlic.",
+        "Add vegetables and stir-fry until tender-crisp.",
+        "Stir in soy sauce and season with salt and pepper."
+      ],
+      "category": ["Vegetarian", "Asian", "Main Course"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24029948/pexels-photo-24029948.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "15 minutes"
+    },
+    {
+      "id": 45,
+      "name": "Beef Tacos",
+      "ingredients": [
+        "500g ground beef",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 packet taco seasoning",
+        "Taco shells",
+        "Shredded lettuce, diced tomatoes, shredded cheese, and sour cream for serving"
+      ],
+      "instructions": [
+        "Cook ground beef with onion and garlic until browned.",
+        "Add taco seasoning and water as per packet instructions.",
+        "Simmer until thickened.",
+        "Serve in taco shells with your favorite toppings."
+      ],
+      "category": ["Mexican", "Main Course", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    },
+    {
+      "id": 46,
+      "name": "Roasted Vegetables",
+      "ingredients": [
+        "2 cups mixed vegetables (e.g., carrots, bell peppers, zucchini)",
+        "2 tbsp olive oil",
+        "1 tsp dried thyme",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 200°C (400°F).",
+        "Toss vegetables with olive oil, thyme, salt, and pepper.",
+        "Spread on a baking sheet and roast for 25-30 minutes."
+      ],
+      "category": ["Side Dish", "Vegetarian", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "25-30 minutes"
+    },
+    {
+      "id": 47,
+      "name": "Stuffed Mushrooms",
+      "ingredients": [
+        "12 large mushrooms",
+        "1/2 cup cream cheese",
+        "1/4 cup grated Parmesan cheese",
+        "2 cloves garlic, minced",
+        "1/4 cup breadcrumbs",
+        "Salt and black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "Remove stems from mushrooms and chop finely.",
+        "Mix cream cheese, Parmesan, garlic, and chopped mushroom stems.",
+        "Fill mushroom caps with mixture and sprinkle with breadcrumbs.",
+        "Bake for 20 minutes."
+      ],
+      "category": ["Appetizer", "Vegetarian", "Comfort Food"],
+      "images": {
+        "large": "https://images.pexels.com/photos/24029954/pexels-photo-24029954.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/24029954/pexels-photo-24029954.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/24029954/pexels-photo-24029954.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/24029954/pexels-photo-24029954.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "cooktime": "20 minutes"
+    }
+  ]
+}
