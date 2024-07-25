@@ -1,53 +1,63 @@
-export function getRecipeList() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(() => {
-        return [
-          {
-            id: "1",
-            title: "Spaghetti",
-            category: "Main Course",
-            time: "20min",
-          },
-          {
-            id: "2",
-            title: "Pancakes",
-            category: "Breakfast",
-            time: "2-3min",
-          },
-        ];
-      });
-    }, 2000);
-  });
-}
+// const data = [
+//   {
+//     id: "1",
+//     title: "Spaghetti",
+//     category: "Main Course",
+//     time: "20min",
+//   },
+//   {
+//     id: "2",
+//     title: "Pancakes",
+//     category: "Breakfast",
+//     time: "2-3min",
+//   },
+// ];
+import axios from "axios";
+const BASE_URL = "http://localhost:5000/recipes";
 
-export function getRecipeDetails() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      // reject({ message: "This is a error message!" });
-      resolve(() => {
-        return {
-          id: "1",
-          title: "Spaghetti",
-          category: "Main Course",
-          time: "20min",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          image:
-            "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/05/Spaghetti-2224.jpg",
-        };
-      });
-    }, 2000);
-  });
+export async function getRecipeList() {
+  const res = await axios.get(BASE_URL);
+  console.log(res.data);
+  return res.data;
 }
+// export function getRecipeList() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(() => {
+//         return data;
+//       });
+//     }, 2000);
+//   });
+// }
 
-export const addRecipe = (body) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({
-        ...body,
-        id: self.crypto.randomUUID(),
-      });
-    }, 1000);
-  });
-};
+// export function getRecipeDetails(id) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       // reject({ message: "This is a error message!" });
+//       resolve(() => {
+//         return data.find((item) => item.id === id);
+//       });
+//     }, 2000);
+//   });
+// }
+
+// export const addRecipe = (body) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve({
+//         ...body,
+//         id: self.crypto.randomUUID(),
+//       });
+//     }, 1000);
+//   });
+// };
+
+// export const editRecipe = (body) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve({
+//         ...body,
+//       });
+//     }, 1000);
+//   });
+// };
