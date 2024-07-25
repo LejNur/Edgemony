@@ -59,16 +59,16 @@ function List() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {recipeList.map((recipe) => (
+                {/* {recipeList.map((recipe) => (
                   <Recipe key={recipe.id} recipe={recipe} />
-                ))}
-                {/* {recipeList
+                ))} */}
+                {recipeList
                   .filter((recipe) =>
                     recipe?.name?.toLowerCase().includes(filter.toLowerCase())
                   )
                   .map((recipe) => (
-                    <Recipe  key={recipe.id} recipe={recipe} />
-                  ))} */}
+                    <Recipe key={recipe.id} recipe={recipe} />
+                  ))}
               </tbody>
             </table>
           </div>
