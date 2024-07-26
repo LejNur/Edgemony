@@ -27,7 +27,6 @@ function RecipeDetails() {
   useEffect(() => {
     getDetails(id);
   }, []);
-  console.log(recipe);
 
   if (isError.isError) return <Error message={isError.message} />;
 
