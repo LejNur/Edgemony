@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { addRecipe } from "../api/client";
 import Form from "../Components/Form/Form";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 function AddRecipe() {
   const navigate = useNavigate();
@@ -13,9 +13,8 @@ function AddRecipe() {
     };
     try {
       const res = await addRecipe(newFormData);
-      // toast.success(`${newFormData.name} added to list!`, {
-      //   position: "top-center",
-      // });
+
+      toast.success(`${newFormData.name} added to list!`);
       console.log(res);
       navigate("/");
     } catch (error) {

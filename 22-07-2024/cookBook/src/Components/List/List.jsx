@@ -31,7 +31,9 @@ function List() {
       const res = await deleteRecipe(id);
       console.log(res);
       setIsLoading(true);
-      getRecipe();
+      const filteredList = recipeList.filter((recipe) => recipe.id !== id);
+      setRecipeList(filteredList);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
