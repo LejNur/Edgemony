@@ -3,6 +3,7 @@ import Form from "../Components/Form/Form";
 import { useEffect, useState } from "react";
 import { editRecipe, getRecipeDetails } from "../api/client";
 import Animation from "../Components/Loading/Animation";
+import { toast } from "react-toastify";
 
 function EditRecipe() {
   const { id } = useParams();
@@ -25,9 +26,10 @@ function EditRecipe() {
   async function handleEditRecipe(body) {
     try {
       const res = await editRecipe({ id, ...body });
+      toast.success(`${body.name} successfully edited!`);
       navigate("/");
     } catch (error) {
-      console.log(error);
+      toast.error(`${error}`);
     }
   }
 

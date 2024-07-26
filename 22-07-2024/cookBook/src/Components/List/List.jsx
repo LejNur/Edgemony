@@ -4,6 +4,7 @@ import { deleteRecipe, getRecipeList } from "../../api/client";
 import Recipe from "../Recipe/Recipe";
 import Animation from "../Loading/Animation";
 import Filter from "../Filter/Filter";
+import { toast } from "react-toastify";
 
 function List() {
   const [recipeList, setRecipeList] = useState([]);
@@ -29,12 +30,14 @@ function List() {
   async function handleDelete(id) {
     try {
       const res = await deleteRecipe(id);
+      toast.success("Recipe deleted successfully!");
       console.log(res);
       setIsLoading(true);
       const filteredList = recipeList.filter((recipe) => recipe.id !== id);
       setRecipeList(filteredList);
       setIsLoading(false);
     } catch (error) {
+      toast.error(`${error}`);
       console.log(error);
     }
   }
