@@ -2,11 +2,7 @@
   "recipes": [
     {
       "name": "Spaghetti Carbonara",
-      "category": [
-        "Pasta",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pasta", "Italian", "Main Course"],
       "cooktime": "20 minutes",
       "ingredients": [
         "200g spaghetti",
@@ -52,16 +48,12 @@
         "Combine fettuccine, chicken, and Alfredo sauce.",
         "Season with salt and pepper and serve."
       ],
-      "category": [
-        "Pasta",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pasta", "Italian", "Main Course"],
       "images": {
-        "large": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "small": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=130",
-        "medium": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "tiny": "https://images.pexels.com/photos/24182617/pexels-photo-24182617.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        "large": "https://images.pexels.com/photos/11220208/pexels-photo-11220208.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "small": "https://images.pexels.com/photos/11220208/pexels-photo-11220208.jpeg?auto=compress&cs=tinysrgb&h=130",
+        "medium": "https://images.pexels.com/photos/11220208/pexels-photo-11220208.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "tiny": "https://images.pexels.com/photos/11220208/pexels-photo-11220208.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
       },
       "cooktime": "25 minutes"
     },
@@ -84,11 +76,7 @@
         "Fill taco shells with seasoned beef.",
         "Top with lettuce, tomato, and cheese."
       ],
-      "category": [
-        "Mexican",
-        "Main Course",
-        "Comfort Food"
-      ],
+      "category": ["Mexican", "Main Course", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -112,11 +100,7 @@
         "Add croutons, Parmesan cheese, and garlic.",
         "Toss with Caesar dressing and serve."
       ],
-      "category": [
-        "Salad",
-        "American",
-        "Appetizer"
-      ],
+      "category": ["Salad", "American", "Appetizer"],
       "images": {
         "large": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -143,11 +127,7 @@
         "Stir in soy sauce and cook for an additional 2 minutes.",
         "Serve hot."
       ],
-      "category": [
-        "Vegetarian",
-        "Asian",
-        "Main Course"
-      ],
+      "category": ["Vegetarian", "Asian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/4552131/pexels-photo-4552131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/4552131/pexels-photo-4552131.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -173,11 +153,7 @@
         "Bake for 15-20 minutes or until crust is golden.",
         "Garnish with fresh basil and a drizzle of olive oil."
       ],
-      "category": [
-        "Pizza",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pizza", "Italian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/18431672/pexels-photo-18431672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/18431672/pexels-photo-18431672.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -206,11 +182,7 @@
         "Combine wet and dry ingredients, then fold in blueberries.",
         "Cook pancakes on a hot griddle until bubbles form on the surface, then flip and cook until golden brown."
       ],
-      "category": [
-        "Breakfast",
-        "American",
-        "Comfort Food"
-      ],
+      "category": ["Breakfast", "American", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/17751911/pexels-photo-17751911/free-photo-of-mirtilli-fotografia-di-cibo-pasticcino-focus-selettivo.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/17751911/pexels-photo-17751911/free-photo-of-mirtilli-fotografia-di-cibo-pasticcino-focus-selettivo.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -238,11 +210,7 @@
         "Add feta cheese.",
         "Toss with olive oil, red wine vinegar, salt, and pepper."
       ],
-      "category": [
-        "Salad",
-        "Greek",
-        "Appetizer"
-      ],
+      "category": ["Salad", "Greek", "Appetizer"],
       "images": {
         "large": "https://images.pexels.com/photos/1152237/pexels-photo-1152237.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/1152237/pexels-photo-1152237.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -268,11 +236,7 @@
         "Stir in lemon juice and season with salt and pepper.",
         "Garnish with parsley and serve."
       ],
-      "category": [
-        "Seafood",
-        "Mediterranean",
-        "Main Course"
-      ],
+      "category": ["Seafood", "Mediterranean", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/24405873/pexels-photo-24405873/free-photo-of-pasto-arancia-arancione-gourmet.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/24405873/pexels-photo-24405873/free-photo-of-pasto-arancia-arancione-gourmet.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -307,11 +271,7 @@
         "Bake for 30-35 minutes or until a toothpick inserted in the center comes out clean.",
         "Cool in pans for 10 minutes; remove to wire racks to cool completely."
       ],
-      "category": [
-        "Dessert",
-        "Baking",
-        "Chocolate"
-      ],
+      "category": ["Dessert", "Baking", "Chocolate"],
       "images": {
         "large": "https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -343,11 +303,7 @@
         "Top with mozzarella and Parmesan cheese.",
         "Bake at 180°C (350°F) for 45 minutes."
       ],
-      "category": [
-        "Pasta",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pasta", "Italian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/4079520/pexels-photo-4079520.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/4079520/pexels-photo-4079520.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -376,11 +332,7 @@
         "Stir in lemon juice, parsley, and red pepper flakes.",
         "Season with salt and pepper."
       ],
-      "category": [
-        "Seafood",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Seafood", "Italian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/8697539/pexels-photo-8697539.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/8697539/pexels-photo-8697539.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -411,11 +363,7 @@
         "Brush with beaten egg.",
         "Bake for 45-50 minutes."
       ],
-      "category": [
-        "Dessert",
-        "Baking",
-        "Pie"
-      ],
+      "category": ["Dessert", "Baking", "Pie"],
       "images": {
         "large": "https://images.pexels.com/photos/5836525/pexels-photo-5836525.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/5836525/pexels-photo-5836525.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -443,11 +391,7 @@
         "Pour batter onto a heated griddle and cook until bubbles form.",
         "Flip and cook until golden brown."
       ],
-      "category": [
-        "Breakfast",
-        "Baking",
-        "Comfort Food"
-      ],
+      "category": ["Breakfast", "Baking", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -476,11 +420,7 @@
         "Pour over bacon and cheese.",
         "Bake for 35-40 minutes."
       ],
-      "category": [
-        "Breakfast",
-        "Baking",
-        "Main Course"
-      ],
+      "category": ["Breakfast", "Baking", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/6072220/pexels-photo-6072220.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/6072220/pexels-photo-6072220.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -508,11 +448,7 @@
         "Wrap ribs in foil and bake for 2.5 hours.",
         "Unwrap, brush with BBQ sauce, and bake for an additional 30 minutes."
       ],
-      "category": [
-        "Main Course",
-        "Grill",
-        "American"
-      ],
+      "category": ["Main Course", "Grill", "American"],
       "images": {
         "large": "https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -543,11 +479,7 @@
         "Add flour mixture and chocolate chips.",
         "Drop dough onto baking sheets and bake for 10-12 minutes."
       ],
-      "category": [
-        "Dessert",
-        "Baking",
-        "Cookies"
-      ],
+      "category": ["Dessert", "Baking", "Cookies"],
       "images": {
         "large": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -575,11 +507,7 @@
         "Stir in onion, cilantro, tomatoes, and garlic.",
         "Add cayenne pepper and mix well."
       ],
-      "category": [
-        "Appetizer",
-        "Dip",
-        "Mexican"
-      ],
+      "category": ["Appetizer", "Dip", "Mexican"],
       "images": {
         "large": "https://images.pexels.com/photos/5738091/pexels-photo-5738091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/5738091/pexels-photo-5738091.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -606,11 +534,7 @@
         "Toss salad with dressing.",
         "Season with salt and pepper."
       ],
-      "category": [
-        "Salad",
-        "Appetizer",
-        "Italian"
-      ],
+      "category": ["Salad", "Appetizer", "Italian"],
       "images": {
         "large": "https://images.pexels.com/photos/6107787/pexels-photo-6107787.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/6107787/pexels-photo-6107787.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -640,11 +564,7 @@
         "Pour into a baking dish and top with mozzarella and Parmesan.",
         "Bake for 30 minutes."
       ],
-      "category": [
-        "Pasta",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pasta", "Italian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/24538680/pexels-photo-24538680/free-photo-of-cena-pranzo-pasto-pasta.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/24538680/pexels-photo-24538680/free-photo-of-cena-pranzo-pasto-pasta.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -674,11 +594,7 @@
         "Pour over crust and bake for an additional 25 minutes.",
         "Dust with powdered sugar once cooled."
       ],
-      "category": [
-        "Dessert",
-        "Baking",
-        "Citrus"
-      ],
+      "category": ["Dessert", "Baking", "Citrus"],
       "images": {
         "large": "https://images.pexels.com/photos/7245481/pexels-photo-7245481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/7245481/pexels-photo-7245481.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -706,11 +622,7 @@
         "Blend soup until smooth and stir in cream.",
         "Season with salt and pepper."
       ],
-      "category": [
-        "Soup",
-        "Vegetarian",
-        "Comfort Food"
-      ],
+      "category": ["Soup", "Vegetarian", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/5605560/pexels-photo-5605560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/5605560/pexels-photo-5605560.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -741,11 +653,7 @@
         "Gradually add broth, stirring constantly, until rice is cooked.",
         "Stir in Parmesan cheese and season with salt and pepper."
       ],
-      "category": [
-        "Pasta",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pasta", "Italian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/11190138/pexels-photo-11190138.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -774,11 +682,7 @@
         "Fry wings until golden and crispy.",
         "Drain on paper towels."
       ],
-      "category": [
-        "Appetizer",
-        "American",
-        "Snack"
-      ],
+      "category": ["Appetizer", "American", "Snack"],
       "images": {
         "large": "https://images.pexels.com/photos/13795311/pexels-photo-13795311.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/13795311/pexels-photo-13795311.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -808,11 +712,7 @@
         "Pour filling into pie crust.",
         "Bake for 15 minutes, then reduce temperature to 180°C (350°F) and bake for an additional 45 minutes."
       ],
-      "category": [
-        "Dessert",
-        "Baking",
-        "Pie"
-      ],
+      "category": ["Dessert", "Baking", "Pie"],
       "images": {
         "large": "https://images.pexels.com/photos/248469/pexels-photo-248469.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/248469/pexels-photo-248469.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -842,11 +742,7 @@
         "Stuff peppers with mixture and top with cheese.",
         "Bake for 30 minutes."
       ],
-      "category": [
-        "Main Course",
-        "Comfort Food",
-        "American"
-      ],
+      "category": ["Main Course", "Comfort Food", "American"],
       "images": {
         "large": "https://images.pexels.com/photos/15006869/pexels-photo-15006869/free-photo-of-piastre-persone-mano-pomodori.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/15006869/pexels-photo-15006869/free-photo-of-piastre-persone-mano-pomodori.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -870,11 +766,7 @@
         "Cover and simmer for 18-20 minutes.",
         "Let sit for 5 minutes before fluffing with a fork."
       ],
-      "category": [
-        "Side Dish",
-        "Asian",
-        "Vegetarian"
-      ],
+      "category": ["Side Dish", "Asian", "Vegetarian"],
       "images": {
         "large": "https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -900,11 +792,7 @@
         "Mash until smooth and creamy.",
         "Season with salt and pepper."
       ],
-      "category": [
-        "Side Dish",
-        "Comfort Food",
-        "American"
-      ],
+      "category": ["Side Dish", "Comfort Food", "American"],
       "images": {
         "large": "https://images.pexels.com/photos/23940629/pexels-photo-23940629.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/23940629/pexels-photo-23940629.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -930,11 +818,7 @@
         "Stir in lime juice and cilantro.",
         "Season with salt and mix well."
       ],
-      "category": [
-        "Appetizer",
-        "Side Dish",
-        "Mexican"
-      ],
+      "category": ["Appetizer", "Side Dish", "Mexican"],
       "images": {
         "large": "https://images.pexels.com/photos/4105288/pexels-photo-4105288.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/4105288/pexels-photo-4105288.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -963,11 +847,7 @@
         "Layer eggplant in a baking dish with marinara sauce and cheeses.",
         "Bake for 30 minutes."
       ],
-      "category": [
-        "Italian",
-        "Vegetarian",
-        "Main Course"
-      ],
+      "category": ["Italian", "Vegetarian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/19295802/pexels-photo-19295802/free-photo-of-delizioso-vista-dall-alto-fotografia-di-cibo-cotto-in-forno.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/19295802/pexels-photo-19295802/free-photo-of-delizioso-vista-dall-alto-fotografia-di-cibo-cotto-in-forno.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -998,11 +878,7 @@
         "Stir in heavy cream and flour.",
         "Season with salt and pepper."
       ],
-      "category": [
-        "Soup",
-        "Seafood",
-        "American"
-      ],
+      "category": ["Soup", "Seafood", "American"],
       "images": {
         "large": "https://images.pexels.com/photos/19048366/pexels-photo-19048366/free-photo-of-cena-pasto-tavolo-piatto.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/19048366/pexels-photo-19048366/free-photo-of-cena-pasto-tavolo-piatto.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1031,11 +907,7 @@
         "Simmer for 30 minutes.",
         "Season with salt and pepper."
       ],
-      "category": [
-        "Main Course",
-        "Comfort Food",
-        "Mexican"
-      ],
+      "category": ["Main Course", "Comfort Food", "Mexican"],
       "images": {
         "large": "https://images.pexels.com/photos/6358926/pexels-photo-6358926.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/6358926/pexels-photo-6358926.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1062,11 +934,7 @@
         "Place salmon on a baking sheet and brush with glaze.",
         "Bake for 15-20 minutes."
       ],
-      "category": [
-        "Seafood",
-        "Main Course",
-        "American"
-      ],
+      "category": ["Seafood", "Main Course", "American"],
       "images": {
         "large": "https://images.pexels.com/photos/3655916/pexels-photo-3655916.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/3655916/pexels-photo-3655916.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1092,11 +960,7 @@
         "Mix spinach, artichokes, mayonnaise, sour cream, Parmesan, mozzarella, and garlic.",
         "Transfer to a baking dish and bake for 20 minutes."
       ],
-      "category": [
-        "Appetizer",
-        "Vegetarian",
-        "Comfort Food"
-      ],
+      "category": ["Appetizer", "Vegetarian", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/1543925/pexels-photo-1543925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/1543925/pexels-photo-1543925.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1123,11 +987,7 @@
         "Stir in fajita seasoning.",
         "Serve with tortillas, sour cream, and salsa."
       ],
-      "category": [
-        "Mexican",
-        "Main Course",
-        "Comfort Food"
-      ],
+      "category": ["Mexican", "Main Course", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/14383832/pexels-photo-14383832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/14383832/pexels-photo-14383832.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1154,11 +1014,7 @@
         "Add soy sauce and cook for a few more minutes.",
         "Thicken with cornstarch if desired."
       ],
-      "category": [
-        "Vegetarian",
-        "Asian",
-        "Side Dish"
-      ],
+      "category": ["Vegetarian", "Asian", "Side Dish"],
       "images": {
         "large": "https://images.pexels.com/photos/2181151/pexels-photo-2181151.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/2181151/pexels-photo-2181151.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1185,11 +1041,7 @@
         "Drizzle with olive oil and red wine vinegar.",
         "Toss to combine and season with salt and pepper."
       ],
-      "category": [
-        "Salad",
-        "Mediterranean",
-        "Side Dish"
-      ],
+      "category": ["Salad", "Mediterranean", "Side Dish"],
       "images": {
         "large": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1216,11 +1068,7 @@
         "Season with salt and pepper.",
         "Garnish with parsley."
       ],
-      "category": [
-        "Seafood",
-        "Main Course",
-        "Comfort Food"
-      ],
+      "category": ["Seafood", "Main Course", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1251,11 +1099,7 @@
         "Add oil, eggs, carrots, and walnuts. Mix until well combined.",
         "Pour batter into a greased pan and bake for 30-35 minutes."
       ],
-      "category": [
-        "Dessert",
-        "Baking",
-        "Cake"
-      ],
+      "category": ["Dessert", "Baking", "Cake"],
       "images": {
         "large": "https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1284,11 +1128,7 @@
         "Add Parmesan cheese and cook until sauce thickens.",
         "Toss with pasta and season with salt and pepper."
       ],
-      "category": [
-        "Pasta",
-        "Italian",
-        "Main Course"
-      ],
+      "category": ["Pasta", "Italian", "Main Course"],
       "images": {
         "large": "https://images.pexels.com/photos/11220209/pexels-photo-11220209.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/11220209/pexels-photo-11220209.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1312,11 +1152,7 @@
         "Blend until smooth.",
         "Pour into glasses and serve."
       ],
-      "category": [
-        "Breakfast",
-        "Smoothie",
-        "Healthy"
-      ],
+      "category": ["Breakfast", "Smoothie", "Healthy"],
       "images": {
         "large": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1340,11 +1176,7 @@
         "Heat oil in a pan and fry tofu until crispy.",
         "Season with soy sauce, salt, and pepper."
       ],
-      "category": [
-        "Vegetarian",
-        "Asian",
-        "Appetizer"
-      ],
+      "category": ["Vegetarian", "Asian", "Appetizer"],
       "images": {
         "large": "https://images.pexels.com/photos/4828147/pexels-photo-4828147.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/4828147/pexels-photo-4828147.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1367,11 +1199,7 @@
         "Toss vegetables with olive oil, thyme, salt, and pepper.",
         "Spread on a baking sheet and roast for 25-30 minutes."
       ],
-      "category": [
-        "Side Dish",
-        "Vegetarian",
-        "Comfort Food"
-      ],
+      "category": ["Side Dish", "Vegetarian", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=130",
@@ -1398,11 +1226,7 @@
         "Fill mushroom caps with mixture and sprinkle with breadcrumbs.",
         "Bake for 20 minutes."
       ],
-      "category": [
-        "Appetizer",
-        "Vegetarian",
-        "Comfort Food"
-      ],
+      "category": ["Appetizer", "Vegetarian", "Comfort Food"],
       "images": {
         "large": "https://images.pexels.com/photos/5152271/pexels-photo-5152271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
         "small": "https://images.pexels.com/photos/5152271/pexels-photo-5152271.jpeg?auto=compress&cs=tinysrgb&h=130",
