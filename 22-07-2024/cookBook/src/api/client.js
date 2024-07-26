@@ -21,3 +21,8 @@ export async function editRecipe(body) {
   const res = await axios.put(`${BASE_URL}/${id}`, data);
   return res.data;
 }
+
+export async function deleteRecipe(id) {
+  const res = await axios.delete(`${BASE_URL}/${id}`);
+  return res.data;
+}

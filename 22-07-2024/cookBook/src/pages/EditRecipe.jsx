@@ -25,7 +25,6 @@ function EditRecipe() {
   async function handleEditRecipe(body) {
     try {
       const res = await editRecipe({ id, ...body });
-      console.log(res);
       navigate("/");
     } catch (error) {
       console.log(error);

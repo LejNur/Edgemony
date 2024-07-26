@@ -522,40 +522,6 @@
       "cooktime": "3 hours"
     },
     {
-      "id": "17",
-      "name": "Vegetarian Stir-Fry",
-      "ingredients": [
-        "2 cups broccoli florets",
-        "1 bell pepper, sliced",
-        "1 carrot, sliced",
-        "1 zucchini, sliced",
-        "1 cup snap peas",
-        "3 cloves garlic, minced",
-        "2 tbsp soy sauce",
-        "1 tbsp sesame oil",
-        "1 tbsp olive oil",
-        "1 tsp ginger, minced"
-      ],
-      "instructions": [
-        "Heat olive oil in a pan.",
-        "Add garlic and ginger, cook for 1 minute.",
-        "Add vegetables and stir-fry until tender.",
-        "Stir in soy sauce and sesame oil."
-      ],
-      "category": [
-        "Vegetarian",
-        "Main Course",
-        "Asian"
-      ],
-      "images": {
-        "large": "https://images.pexels.com/photos/19105514/pexels-photo-19105514/free-photo-of-verdure-cena-pranzo-pasto.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "small": "https://images.pexels.com/photos/19105514/pexels-photo-19105514/free-photo-of-verdure-cena-pranzo-pasto.jpeg?auto=compress&cs=tinysrgb&h=130",
-        "medium": "https://images.pexels.com/photos/19105514/pexels-photo-19105514/free-photo-of-verdure-cena-pranzo-pasto.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "tiny": "https://images.pexels.com/photos/19105514/pexels-photo-19105514/free-photo-of-verdure-cena-pranzo-pasto.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-      },
-      "cooktime": "15 minutes"
-    },
-    {
       "id": "18",
       "name": "Chocolate Chip Cookies",
       "ingredients": [
@@ -1386,61 +1352,6 @@
         "tiny": "https://images.pexels.com/photos/4828147/pexels-photo-4828147.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
       },
       "cooktime": "15 minutes"
-    },
-    {
-      "name": "TEST",
-      "category": [
-        "Vegetarian",
-        "Asian",
-        "Main Course"
-      ],
-      "cooktime": "15 minutes",
-      "ingredients": [
-        "1 cup broccoli florets",
-        "1 cup bell peppers, sliced",
-        "1 cup snap peas",
-        "2 cloves garlic, minced",
-        "2 tbsp soy sauce",
-        "1 tbsp olive oil",
-        "Salt and black pepper to taste"
-      ],
-      "instructions": [
-        "Heat olive oil in a pan and add garlic.",
-        "Add vegetables and stir-fry until tender-crisp.",
-        "Stir in soy sauce and season with salt and pepper."
-      ],
-      "images": "TEST",
-      "id": "44"
-    },
-    {
-      "id": "45",
-      "name": "Beef Tacos",
-      "ingredients": [
-        "500g ground beef",
-        "1 onion, chopped",
-        "2 cloves garlic, minced",
-        "1 packet taco seasoning",
-        "Taco shells",
-        "Shredded lettuce, diced tomatoes, shredded cheese, and sour cream for serving"
-      ],
-      "instructions": [
-        "Cook ground beef with onion and garlic until browned.",
-        "Add taco seasoning and water as per packet instructions.",
-        "Simmer until thickened.",
-        "Serve in taco shells with your favorite toppings."
-      ],
-      "category": [
-        "Mexican",
-        "Main Course",
-        "Comfort Food"
-      ],
-      "images": {
-        "large": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "small": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=130",
-        "medium": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "tiny": "https://images.pexels.com/photos/7613568/pexels-photo-7613568.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-      },
-      "cooktime": "20 minutes"
     },
     {
       "id": "46",

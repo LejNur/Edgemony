@@ -1,6 +1,6 @@
 import { labels } from "../../locales/staticText";
 import { useState, useEffect } from "react";
-import { getRecipeList } from "../../api/client";
+import { deleteRecipe, getRecipeList } from "../../api/client";
 import Recipe from "../Recipe/Recipe";
 import Animation from "../Loading/Animation";
 import Filter from "../Filter/Filter";
@@ -25,6 +25,17 @@ function List() {
   useEffect(() => {
     getRecipe();
   }, []);
+
+  async function handleDelete(id) {
+    try {
+      const res = await deleteRecipe(id);
+      console.log(res);
+      setIsLoading(true);
+      getRecipe();
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   if (isLoading) return <Animation />;
 
@@ -57,15 +68,16 @@ function List() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {/* {recipeList.map((recipe) => (
-                  <Recipe key={recipe.id} recipe={recipe} />
-                ))} */}
                 {recipeList
                   .filter((recipe) =>
                     recipe?.name?.toLowerCase().includes(filter.toLowerCase())
                   )
                   .map((recipe) => (
-                    <Recipe key={recipe.id} recipe={recipe} />
+                    <Recipe
+                      key={recipe.id}
+                      recipe={recipe}
+                      onDelete={handleDelete}
+                    />
                   ))}
               </tbody>
             </table>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Recipe({ recipe }) {
+function Recipe({ recipe, onDelete }) {
   return (
     <tr>
       <td className="whitespace-nowrap px-4 py-2 text-gray-700">
@@ -34,6 +34,9 @@ function Recipe({ recipe }) {
         >
           Edit
         </Link>
+      </td>
+      <td>
+        <button onClick={() => onDelete(recipe.id)}>Delete Recipe</button>
       </td>
     </tr>
   );
