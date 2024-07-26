@@ -48,7 +48,6 @@ function List() {
     <>
       <div className="flex justify-center bg-creamyWhite">
         <div className="w-4/5">
-          <h1 className="py-2 text-rusticBrown">{labels.recipeList}</h1>
           <Filter
             filter={filter}
             onChange={(e) => {

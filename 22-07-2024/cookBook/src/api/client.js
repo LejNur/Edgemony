@@ -15,7 +15,7 @@ export async function addRecipe(body) {
   const formattedBody = {
     ...body,
     ingredients: body.ingredients.split(","),
-    instructions: body.instructions.split("."),
+    instructions: body.instructions.split(","),
     images: {
       large: body.images,
       small: body.images,

@@ -3,20 +3,24 @@ import { labels } from "../../locales/staticText";
 
 function Navbar() {
   return (
-    <header className="bg-creamyWhite">
+    <header className="bg-creamyWhite py-6">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="md:flex md:items-center md:gap-12">
+          <div className="flex items-center gap-5">
             <Link to="/">
               <img src="/icon.svg"></img>
             </Link>
+            <h1 className=" text-rusticBrown">{labels.recipeList}</h1>
           </div>
 
           <div className="hidden md:block">
             <nav aria-label="Global" className="text-rusticBrown">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link className=" hover:text-herbGreen" to="/add">
+                  <Link
+                    className="inline-block rounded-full bg-herbGreen px-4 py-2 text-sm font-medium text-creamyWhite hover:scale-105 hover:transition ease-in-out"
+                    to="/add"
+                  >
                     {labels.navbarLinkAdd}
                   </Link>
                 </li>

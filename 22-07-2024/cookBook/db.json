@@ -1410,53 +1410,6 @@
         "tiny": "https://images.pexels.com/photos/5152271/pexels-photo-5152271.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
       },
       "cooktime": "20 minutes"
-    },
-    {
-      "name": "Pasta Cacio e Pepe",
-      "category": [
-        "Italian, Main Course"
-      ],
-      "cooktime": "15minutes",
-      "ingredients": [
-        "Pecorino romano cheese",
-        " black pepper",
-        " pasta"
-      ],
-      "instructions": [
-        "Put water to boil with a dash of salt",
-        " Toast the pepper in a hot pan",
-        " Add pasta when almost cooked",
-        " Add cheese"
-      ],
-      "images": "https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "id": "3ce2"
-    },
-    {
-      "id": "4db1",
-      "name": "Cevapi",
-      "category": [
-        "Bosnian, Main Course"
-      ],
-      "cooktime": "20minutes",
-      "ingredients": [
-        "Minced meat",
-        " onions",
-        " garlic",
-        " baking soda",
-        " salt and pepper"
-      ],
-      "instructions": [
-        "Mix all the ingredients",
-        "  Leave it for a couple of hours in the fridge",
-        " Cook it on a grill or in a pan",
-        ""
-      ],
-      "images": {
-        "large": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "small": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "medium": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "tiny": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }
     }
   ]
 }
