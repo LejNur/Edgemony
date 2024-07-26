@@ -1432,23 +1432,30 @@
       "id": "3ce2"
     },
     {
-      "id": "c650",
-      "name": "TEST",
+      "id": "4db1",
+      "name": "Cevapi",
       "category": [
-        "TEST"
+        "Bosnian, Main Course"
       ],
-      "cooktime": "TEST",
+      "cooktime": "20minutes",
       "ingredients": [
-        "TEST"
+        "Minced meat",
+        " onions",
+        " garlic",
+        " baking soda",
+        " salt and pepper"
       ],
       "instructions": [
-        "TEST"
+        "Mix all the ingredients",
+        "  Leave it for a couple of hours in the fridge",
+        " Cook it on a grill or in a pan",
+        ""
       ],
       "images": {
-        "large": "https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "small": "https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "medium": "https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "tiny": "https://images.pexels.com/photos/11654236/pexels-photo-11654236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "large": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "small": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "medium": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "tiny": "https://images.pexels.com/photos/6920656/pexels-photo-6920656.jpeg?auto=compress&cs=tinysrgb&w=600"
       }
     }
   ]
