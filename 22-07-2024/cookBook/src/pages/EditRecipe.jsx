@@ -1,13 +1,14 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Form from "../Components/Form/Form";
 import { useEffect, useState } from "react";
-// import { getRecipeDetails } from "../api/client";
+import { editRecipe, getRecipeDetails } from "../api/client";
 import Animation from "../Components/Loading/Animation";
 
 function EditRecipe() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function initializeRecipe() {
@@ -19,10 +20,20 @@ function EditRecipe() {
     initializeRecipe();
   }, []);
 
-  console.log(recipe);
+  // console.log(recipe);
+
+  async function handleEditRecipe(body) {
+    try {
+      const res = await editRecipe({ id, ...body });
+      console.log(res);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   if (isLoading) return <Animation />;
-  return <Form value={recipe} />;
+  return <Form value={recipe} onSubmit={handleEditRecipe} />;
 }
 
 export default EditRecipe;

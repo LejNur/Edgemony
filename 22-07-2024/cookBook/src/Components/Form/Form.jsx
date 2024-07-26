@@ -6,7 +6,7 @@ function Form({ value, onSubmit }) {
   const initialState = {
     name: value?.name || "",
     category: value?.category || "",
-    cooktime: value?.time || "",
+    cooktime: value?.cooktime || "",
     ingredients: value?.ingredients || "",
     instructions: value?.instructions || "",
     images: value?.images || "",
@@ -43,7 +43,7 @@ function Form({ value, onSubmit }) {
     <div>
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="text-2xl font-bold sm:text-3xl">{labels.formTitle}</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">{labels.formName}</h2>
         </div>
 
         <form
@@ -61,7 +61,7 @@ function Form({ value, onSubmit }) {
 
             <div className="relative">
               <input
-                value={form.title}
+                value={form.name}
                 name="name"
                 type="text"
                 className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
@@ -88,7 +88,7 @@ function Form({ value, onSubmit }) {
 
             <div className="relative">
               <input
-                value={form.time}
+                value={form.cooktime}
                 name="cooktime"
                 type="text"
                 className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
@@ -101,13 +101,15 @@ function Form({ value, onSubmit }) {
             <label>{labels.formLabelIngredients}</label>
 
             <div className="relative">
-              <input
+              <textarea
                 value={form.ingredients}
                 name="ingredients"
                 type="text"
-                className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                rows="5"
+                cols="1"
+                className="w-full resize-none rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
-              />
+              ></textarea>
             </div>
           </div>
 

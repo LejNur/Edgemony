@@ -1,4 +1,3 @@
-
 import axios from "axios";
 const BASE_URL = "http://localhost:5000/recipes";
 
@@ -17,13 +16,8 @@ export async function addRecipe(body) {
   return res.data;
 }
 
-
-// export const editRecipe = (body) => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve({
-//         ...body,
-//       });
-//     }, 1000);
-//   });
-// };
+export async function editRecipe(body) {
+  const { id, ...data } = body;
+  const res = await axios.put(`${BASE_URL}/${id}`, data);
+  return res.data;
+}

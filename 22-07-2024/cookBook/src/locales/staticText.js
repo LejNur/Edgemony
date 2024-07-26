@@ -16,7 +16,7 @@ export const labels = {
 
   //form labels
   formTitle: "Add New Recipe!",
-  formLabelTitle: "Title",
+  formLabelName: "Name",
   formLabelCategory: "Category",
   formLabelCooktime: "Cook time",
   formLabelInstructions: "Instructions",
