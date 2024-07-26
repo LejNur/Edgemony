@@ -21,7 +21,12 @@ function AddRecipe() {
       console.log(error);
     }
   }
-  return <Form onSubmit={handleSubmit} />;
+  return (
+    <>
+      <h2 className="font-bold text-center text-3xl">Add new recipe!</h2>
+      <Form onSubmit={handleSubmit} />
+    </>
+  );
 }
 
 export default AddRecipe;

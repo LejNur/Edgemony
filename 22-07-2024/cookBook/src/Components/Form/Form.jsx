@@ -133,7 +133,7 @@ function Form({ value, onSubmit }) {
 
             <div className="relative">
               <input
-                value={form.images}
+                value={form.images.large}
                 name="images"
                 type="text"
                 className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"

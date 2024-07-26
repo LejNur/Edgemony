@@ -12,7 +12,12 @@ export async function getRecipeDetails(id) {
 }
 
 export async function addRecipe(body) {
-  const res = await axios.post(BASE_URL, body);
+  const formattedBody = {
+    ...body,
+    ingredients: body.ingredients.split(","),
+    instructions: body.instructions.split("."),
+  };
+  const res = await axios.post(BASE_URL, formattedBody);
   return res.data;
 }
 

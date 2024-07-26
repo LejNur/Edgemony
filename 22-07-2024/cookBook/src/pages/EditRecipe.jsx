@@ -34,7 +34,12 @@ function EditRecipe() {
   }
 
   if (isLoading) return <Animation />;
-  return <Form value={recipe} onSubmit={handleEditRecipe} />;
+  return (
+    <>
+      <h2 className="font-bold text-center text-3xl">Edit a recipe!</h2>
+      <Form value={recipe} onSubmit={handleEditRecipe} />;
+    </>
+  );
 }
 
 export default EditRecipe;
