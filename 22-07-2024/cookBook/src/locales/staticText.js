@@ -23,5 +23,5 @@ export const labels = {
   formLabelIngredients: "Ingredients",
   formLabelImages: "Image URL",
 
-  formSubmitButton: "Add new recipe",
+  formSubmitButton: "Submit",
 };

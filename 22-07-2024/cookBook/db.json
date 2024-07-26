@@ -1354,33 +1354,6 @@
       "cooktime": "15 minutes"
     },
     {
-      "id": "46",
-      "name": "Roasted Vegetables",
-      "ingredients": [
-        "2 cups mixed vegetables (e.g., carrots, bell peppers, zucchini)",
-        "2 tbsp olive oil",
-        "1 tsp dried thyme",
-        "Salt and black pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 200°C (400°F).",
-        "Toss vegetables with olive oil, thyme, salt, and pepper.",
-        "Spread on a baking sheet and roast for 25-30 minutes."
-      ],
-      "category": [
-        "Side Dish",
-        "Vegetarian",
-        "Comfort Food"
-      ],
-      "images": {
-        "large": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "small": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=130",
-        "medium": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&h=350",
-        "tiny": "https://images.pexels.com/photos/6462179/pexels-photo-6462179.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-      },
-      "cooktime": "25-30 minutes"
-    },
-    {
       "id": "47",
       "name": "Stuffed Mushrooms",
       "ingredients": [

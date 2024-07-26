@@ -37,7 +37,7 @@ function Recipe({ recipe, onDelete }) {
       </td>
       <td>
         <button
-          className="rounded bg-tomatoRed px-4 py-2 text-sm font-medium text-creamyWhite hover:outline outline-tomatoRed hover:bg-transparent hover:transition ease-in-out hover:text-tomatoRed"
+          className="inline rounded bg-tomatoRed px-4 py-2 text-sm font-medium text-creamyWhite hover:outline outline-tomatoRed hover:bg-transparent hover:transition ease-in-out hover:text-tomatoRed"
           onClick={() => onDelete(recipe.id)}
         >
           Delete Recipe
