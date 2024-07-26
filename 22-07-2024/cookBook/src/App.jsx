@@ -7,7 +7,7 @@ import EditRecipe from "./pages/EditRecipe";
 
 function App() {
   return (
-    <>
+    <div className="bg-creamyWhite">
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/add" element={<AddRecipe />} />
         <Route path="/edit/:id" element={<EditRecipe />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

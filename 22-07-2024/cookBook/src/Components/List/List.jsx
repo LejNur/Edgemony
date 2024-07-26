@@ -46,9 +46,9 @@ function List() {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center bg-creamyWhite">
         <div className="w-4/5">
-          <h1 className="py-2">{labels.recipeList}</h1>
+          <h1 className="py-2 text-rusticBrown">{labels.recipeList}</h1>
           <Filter
             filter={filter}
             onChange={(e) => {
@@ -56,17 +56,17 @@ function List() {
             }}
           />
           <div className="overflow-x-auto py-8">
-            <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+            <table className="min-w-full h-screen divide-y-2 divide-warmSpice text-sm ">
               <thead className="text-left">
                 <tr>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900"></th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                  <th className="whitespace-nowrap px-4 py-2 font-bold  text-rusticBrown text-base"></th>
+                  <th className="whitespace-nowrap px-4 py-2 font-bold  text-rusticBrown text-base">
                     {labels.recipeTitle}
                   </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                  <th className="whitespace-nowrap px-4 py-2 font-bold  text-rusticBrown text-base">
                     {labels.recipeCategory}
                   </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                  <th className="whitespace-nowrap px-4 py-2 font-bold  text-rusticBrown text-base">
                     {labels.recipeCookTime}
                   </th>
                   <th className="px-4 py-2"></th>

@@ -3,7 +3,7 @@ import { labels } from "../../locales/staticText";
 
 function Navbar() {
   return (
-    <header className="bg-white">
+    <header className="bg-creamyWhite">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
@@ -13,13 +13,10 @@ function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <nav aria-label="Global">
+            <nav aria-label="Global" className="text-rusticBrown">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    to="/add"
-                  >
+                  <Link className=" hover:text-herbGreen" to="/add">
                     {labels.navbarLinkAdd}
                   </Link>
                 </li>

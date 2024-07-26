@@ -2,7 +2,7 @@ import { labels } from "../../locales/staticText";
 
 function Filter({ filter, onChange }) {
   return (
-    <div className="flex justify-center items-center my-10">
+    <div className="flex justify-center items-center my-10 bg-creamyWhite">
       <div className="relative w-96">
         <input
           type="text"
@@ -10,10 +10,13 @@ function Filter({ filter, onChange }) {
           value={filter}
           placeholder={`${labels.filterInput}`}
           onChange={onChange}
-          className="w-full rounded-md border-gray-200 p-2.5 pe-10 shadow-sm sm:text-sm"
+          className="w-full rounded-md border border-transparent focus-visible:outline-rusticBrown p-2.5 pe-10 shadow-sm sm:text-sm"
         />
         <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
-          <button type="button" className="text-gray-600 hover:text-gray-700">
+          <button
+            type="button"
+            className="text-rusticBrown hover:text-rusticBrown"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
