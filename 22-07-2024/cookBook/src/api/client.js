@@ -16,6 +16,12 @@ export async function addRecipe(body) {
     ...body,
     ingredients: body.ingredients.split(","),
     instructions: body.instructions.split("."),
+    images: {
+      large: body.images,
+      small: body.images,
+      medium: body.images,
+      tiny: body.images,
+    },
   };
   const res = await axios.post(BASE_URL, formattedBody);
   return res.data;
