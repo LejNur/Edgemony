@@ -23,7 +23,9 @@ function AddRecipe() {
   }
   return (
     <>
-      <h2 className="font-bold text-center text-3xl">Add new recipe!</h2>
+      <h2 className="font-bold text-center text-3xl text-rusticBrown">
+        Add new recipe
+      </h2>
       <Form onSubmit={handleSubmit} />
     </>
   );

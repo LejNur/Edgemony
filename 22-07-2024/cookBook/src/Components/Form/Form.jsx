@@ -54,51 +54,59 @@ function Form({ value, onSubmit }) {
             setIsLoading(false);
             setForm(initialState);
           }}
-          className="mx-auto mb-0 mt-8 max-w-md space-y-4"
+          className="mx-auto mb-0 mt-8 max-w-md space-y-4 text-rusticBrown"
         >
           <div>
-            <label>{labels.formLabelTitle}</label>
+            <label className="text-warmSpice font-semibold">
+              {labels.formLabelName}
+            </label>
 
             <div className="relative">
               <input
                 value={form.name}
                 name="name"
                 type="text"
-                className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                className="w-full rounded-lg border border-rusticBrown focus-within:outline-rusticBrown p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
               />
             </div>
           </div>
 
           <div>
-            <label>{labels.formLabelCategory}</label>
+            <label className="text-warmSpice font-semibold">
+              {labels.formLabelCategory}
+            </label>
 
             <div className="relative">
               <input
                 value={form.category}
                 name="category"
                 type="text"
-                className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                className="w-full rounded-lg border border-rusticBrown focus-within:outline-rusticBrown p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
               />
             </div>
           </div>
           <div>
-            <label>{labels.formLabelCooktime}</label>
+            <label className="text-warmSpice font-semibold">
+              {labels.formLabelCooktime}
+            </label>
 
             <div className="relative">
               <input
                 value={form.cooktime}
                 name="cooktime"
                 type="text"
-                className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                className="w-full rounded-lg border border-rusticBrown focus-within:outline-rusticBrown p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
               />
             </div>
           </div>
 
           <div>
-            <label>{labels.formLabelIngredients}</label>
+            <label className="text-warmSpice font-semibold">
+              {labels.formLabelIngredients}
+            </label>
 
             <div className="relative">
               <textarea
@@ -107,14 +115,16 @@ function Form({ value, onSubmit }) {
                 type="text"
                 rows="5"
                 cols="1"
-                className="w-full resize-none rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                className="w-full resize-none rounded-lg border border-rusticBrown focus-within:outline-rusticBrown p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
               ></textarea>
             </div>
           </div>
 
           <div>
-            <label>{labels.formLabelInstructions}</label>
+            <label className="text-warmSpice font-semibold">
+              {labels.formLabelInstructions}
+            </label>
 
             <div className="relative">
               <textarea
@@ -122,21 +132,23 @@ function Form({ value, onSubmit }) {
                 name="instructions"
                 rows="10"
                 cols="33"
-                className="w-full resize-none rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                className="w-full resize-none rounded-lg border border-rusticBrown focus-within:outline-rusticBrown p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
               ></textarea>
             </div>
           </div>
 
           <div>
-            <label>{labels.formLabelImages}</label>
+            <label className="text-warmSpice font-semibold">
+              {labels.formLabelImages}
+            </label>
 
             <div className="relative">
               <input
                 value={form.images.large}
                 name="images"
                 type="text"
-                className="w-full rounded-lg border border-gray-400 p-4 pe-12 text-sm shadow-sm"
+                className="w-full rounded-lg border border-rusticBrown focus-within:outline-rusticBrown p-4 pe-12 text-sm shadow-sm"
                 onChange={handleInput}
               />
             </div>
@@ -145,7 +157,7 @@ function Form({ value, onSubmit }) {
           <button
             disabled={formValidation}
             type="submit"
-            className="inline-block w-full rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white disabled:opacity-50"
+            className="inline-block w-full rounded-lg bg-herbGreen hover:opacity-90 hover:transition ease-in-out px-5 py-3 text-sm font-medium text-creamyWhite disabled:opacity-50"
           >
             {labels.formSubmitButton}
           </button>

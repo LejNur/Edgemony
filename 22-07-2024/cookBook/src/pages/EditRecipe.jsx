@@ -21,8 +21,6 @@ function EditRecipe() {
     initializeRecipe();
   }, []);
 
-  // console.log(recipe);
-
   async function handleEditRecipe(body) {
     try {
       const res = await editRecipe({ id, ...body });
@@ -36,7 +34,9 @@ function EditRecipe() {
   if (isLoading) return <Animation />;
   return (
     <>
-      <h2 className="font-bold text-center text-3xl">Edit a recipe!</h2>
+      <h2 className="font-bold text-center text-3xl text-rusticBrown">
+        Edit recipe
+      </h2>
       <Form value={recipe} onSubmit={handleEditRecipe} />;
     </>
   );
