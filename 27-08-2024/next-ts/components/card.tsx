@@ -9,7 +9,7 @@ export default function Card({ post }: { post: IBlogPost }) {
         key={post.id}
         className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
       >
-        <div className="bg-zinc-100 p-4 sm:p-6 ">
+        <div className="bg-zinc-100 p-6">
           <Link href={`/post/${post.id}`}>
             <h3 className="mt-0.5 text-lg text-gray-900 ">{post.title}</h3>
           </Link>
