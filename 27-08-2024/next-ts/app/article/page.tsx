@@ -1,9 +1,56 @@
-import React from "react";
+"use client";
+
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
 export default function Article() {
+  const [title, setTitle] = useState<string>("");
+  const [article, setArticle] = useState<string>("");
+
+  const handleOnSubmit = (e: FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    const formData = {
+      title: title,
+      article: article,
+    };
+    console.log("success,", formData);
+
+    setTitle("");
+    setArticle("");
+  };
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
+  ): void => {
+    const { name, value } = e.target;
+
+    if (name === "title") {
+      setTitle(value);
+    } else {
+      setArticle(value);
+    }
+  };
+
   return (
     <div>
-      <p>This is write an article page</p>
+      <form onSubmit={handleOnSubmit} className="flex flex-col gap-2 p-4 ">
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          className="border-none rounded-md p-1"
+          onChange={handleChange}
+          value={title}
+        />
+        <textarea
+          name="article"
+          placeholder="Article"
+          className="border-none rounded-md px-1 pb-8 resize-none"
+          onChange={handleChange}
+        ></textarea>
+        <button className="bg-green-800 text-zinc-200 rounded-md w-60 p-2 hover:bg-green-600">
+          Send
+        </button>
+      </form>
     </div>
   );
 }
