@@ -1,8 +1,8 @@
 import { IBlogPost } from "@/app/model/post";
 
-export const getPost = async (): Promise<IBlogPost> => {
+export const getPost = async (id: string): Promise<IBlogPost> => {
   try {
-    const res = await fetch(`https://dummyjson.com/posts/1`);
+    const res = await fetch(`https://dummyjson.com/posts/${id}`);
 
     const data = await res.json();
 
