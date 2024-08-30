@@ -17,8 +17,6 @@ export default function Article() {
 
     const newArticle = await newPost(formData.title, formData.article);
     console.log(newArticle);
-    setTitle("");
-    setArticle("");
   };
 
   const handleChange = (
