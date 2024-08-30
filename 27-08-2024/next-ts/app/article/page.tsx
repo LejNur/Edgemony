@@ -1,19 +1,22 @@
 "use client";
 
+import { newPost } from "@/action/post-post";
 import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
 export default function Article() {
   const [title, setTitle] = useState<string>("");
   const [article, setArticle] = useState<string>("");
 
-  const handleOnSubmit = (e: FormEvent<HTMLFormElement>): void => {
+  const handleOnSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = {
       title: title,
       article: article,
     };
-    console.log("success,", formData);
+    // console.log("success,", formData);
 
+    const newArticle = await newPost(formData.title, formData.article);
+    console.log(newArticle);
     setTitle("");
     setArticle("");
   };
