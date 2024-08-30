@@ -32,7 +32,10 @@ export default function Article() {
 
   return (
     <div>
-      <form onSubmit={handleOnSubmit} className="flex flex-col gap-2 p-4 ">
+      <form
+        onSubmit={handleOnSubmit}
+        className="flex flex-col gap-2 p-4 w-2/5  "
+      >
         <input
           type="text"
           name="title"
